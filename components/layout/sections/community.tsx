@@ -9,7 +9,10 @@ const markers = [
 export const CommunitySection = () => {
   return (
     <section id="univers" className="container py-16 md:py-24">
-      <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-[linear-gradient(132deg,rgba(9,17,30,0.97),rgba(14,26,45,0.82))] p-7 shadow-[0_24px_65px_-45px_rgba(56,189,248,0.9)] md:p-10">
+      <div
+        data-reveal
+        className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-[linear-gradient(132deg,rgba(9,17,30,0.97),rgba(14,26,45,0.82))] p-7 shadow-[0_24px_65px_-45px_rgba(56,189,248,0.9)] md:p-10"
+      >
         <div className="pointer-events-none absolute -left-14 top-0 h-40 w-40 rounded-full bg-primary/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-16 right-0 h-44 w-44 rounded-full bg-accent/15 blur-3xl" />
 
@@ -28,9 +31,11 @@ export const CommunitySection = () => {
           </p>
 
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {markers.map((item) => (
+            {markers.map((item, index) => (
               <div
                 key={item}
+                data-reveal
+                data-reveal-delay={((index % 4) + 1).toString()}
                 className="rounded-2xl border border-slate-700/70 bg-slate-950/45 px-4 py-4 text-sm leading-relaxed text-slate-200"
               >
                 {item}

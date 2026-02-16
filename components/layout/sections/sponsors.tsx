@@ -3,7 +3,7 @@ import Image from "next/image";
 export const SponsorsSection = () => {
   return (
     <section id="identite" className="container py-16 md:py-24">
-      <div className="section-shell relative overflow-hidden">
+      <div data-reveal className="section-shell relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_14%_10%,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_86%_0%,rgba(232,200,122,0.16),transparent_30%)]" />
 
         <div className="relative mb-8 text-center md:mb-10">
@@ -20,7 +20,11 @@ export const SponsorsSection = () => {
           </p>
         </div>
 
-        <article className="relative mx-auto max-w-5xl rounded-3xl border border-border/70 bg-card/82 p-4 shadow-[0_20px_50px_-30px_rgba(25,100,150,0.6)] sm:p-6">
+        <article
+          data-reveal
+          data-reveal-delay="1"
+          className="relative mx-auto max-w-5xl rounded-3xl border border-border/70 bg-card/82 p-4 shadow-[0_20px_50px_-30px_rgba(25,100,150,0.6)] sm:p-6"
+        >
           <div className="flex min-h-[230px] items-center justify-center rounded-2xl border border-border/40 bg-gradient-to-b from-white to-slate-100 p-6 dark:from-slate-950 dark:to-black sm:min-h-[310px] md:min-h-[360px]">
               <Image
                 src="/dsc01673.jpg"

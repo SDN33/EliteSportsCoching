@@ -7,8 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 const sloganList = [
-  "Performance sportive mesurable",
-  "Progression humaine durable",
+  "Comment atteindre le haut niveau",
+  "Comment devenir joueur pro",
 ];
 
 export const HeroSection = () => {
@@ -97,7 +97,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative overflow-hidden pb-16 pt-16 md:pb-20 md:pt-24">
+    <section id="hero" className="relative overflow-hidden pb-14 pt-14 md:pb-20 md:pt-24">
       <video
         ref={bgVideoRef}
         autoPlay
@@ -119,33 +119,38 @@ export const HeroSection = () => {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(56,189,248,0.2),transparent_45%),radial-gradient(circle_at_80%_12%,rgba(232,200,122,0.16),transparent_38%),linear-gradient(170deg,rgba(255,255,255,0.8),rgba(235,246,255,0.9))] dark:hidden" />
       <div className="absolute inset-0 -z-10 hidden bg-[radial-gradient(circle_at_18%_18%,rgba(46,196,255,0.24),transparent_45%),radial-gradient(circle_at_80%_12%,rgba(232,200,122,0.18),transparent_36%),linear-gradient(170deg,rgba(5,10,17,0.62),rgba(5,8,14,0.82))] dark:block" />
 
-      <div className="container grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
-        <div className="relative space-y-8 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-6 shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] md:p-8">
+      <div className="container grid items-center gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
+        <div
+          data-reveal="left"
+          className="relative space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8"
+        >
           <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-primary/45 to-transparent" />
           <Badge
             variant="outline"
             className="border-primary/55 bg-white/80 px-4 py-1 text-xs uppercase tracking-[0.2em] text-slate-700 dark:bg-background/35 dark:text-slate-100"
           >
-            Coaching sportif & conseil strategique multisport
+            Conseiller sportif multisport
           </Badge>
 
           <div className="space-y-5">
-            <h1 className="font-title text-balance-pretty text-4xl font-semibold leading-[1.04] text-slate-900 dark:text-foreground md:text-6xl">
+            <h1 className="font-title text-balance-pretty text-3xl font-semibold leading-[1.06] text-slate-900 dark:text-foreground sm:text-4xl md:text-6xl">
               Coaching sportif premium
               <br className="hidden md:block" />
               & conseil de performance durable
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-slate-700 dark:text-muted-foreground md:text-xl">
+            <p className="max-w-2xl text-base leading-relaxed text-slate-700 dark:text-muted-foreground sm:text-lg md:text-xl">
               Elite Sports Coaching & Conseils accompagne athletes, clubs et
               structures dans la performance sportive, la strategie de jeu et
               le developpement du potentiel a long terme.
             </p>
           </div>
 
-          <ul className="grid gap-3 text-xs sm:grid-cols-2">
-            {sloganList.map((slogan) => (
+          <ul className="grid gap-2.5 text-[11px] sm:grid-cols-2 sm:gap-3 sm:text-xs">
+            {sloganList.map((slogan, index) => (
               <li
                 key={slogan}
+                data-reveal
+                data-reveal-delay={(index + 1).toString()}
                 className="group flex items-center gap-3 rounded-xl border border-border/50 bg-background/65 px-3 py-2 text-xs uppercase tracking-[0.13em] text-slate-800 dark:bg-background/35 dark:text-foreground/90"
               >
                 <span className="h-px w-8 bg-gradient-to-r from-primary to-[#e8c87a] transition-all duration-300 group-hover:w-12" />
@@ -154,8 +159,11 @@ export const HeroSection = () => {
             ))}
           </ul>
 
-          <div className="flex flex-wrap gap-3 pt-1">
-            <Button asChild className="rounded-full px-7 text-sm font-semibold shadow-lg shadow-primary/25">
+          <div className="flex flex-wrap gap-2.5 pt-1 sm:gap-3">
+            <Button
+              asChild
+              className="w-full justify-center rounded-full px-5 text-xs font-semibold shadow-lg shadow-primary/25 sm:w-auto sm:px-7 sm:text-sm"
+            >
               <Link href="#presentation">
                 Decouvrir notre methode de performance
                 <ArrowRight className="ml-2 size-4" />
@@ -164,7 +172,7 @@ export const HeroSection = () => {
             <Button
               asChild
               variant="secondary"
-              className="rounded-full border border-border/60 bg-white/80 px-7 shadow-sm dark:bg-background/45"
+              className="w-full justify-center rounded-full border border-border/60 bg-white/80 px-5 text-xs shadow-sm dark:bg-background/45 sm:w-auto sm:px-7 sm:text-sm"
             >
               <Link href="#contact">
                 <PlayCircle className="mr-2 size-4" />
@@ -174,7 +182,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div data-reveal="right" data-reveal-delay="1" className="relative">
           <div className="absolute -left-8 -top-8 h-24 w-24 rounded-full bg-primary/20 blur-2xl" />
           <article className="overflow-hidden rounded-[1.9rem] border border-border/70 bg-slate-950/65 shadow-[0_30px_65px_-42px_rgba(6,27,44,0.95)] backdrop-blur-sm">
             <video
@@ -185,7 +193,7 @@ export const HeroSection = () => {
               playsInline
               preload="auto"
               poster="/hero-image-dark.jpeg"
-              className="h-[320px] w-full bg-black object-contain lg:h-[430px]"
+              className="h-[240px] w-full bg-black object-contain sm:h-[320px] lg:h-[430px]"
               aria-label="Video synchronisee avec le fond hero"
             >
               <source src="/videohero.mp4" type="video/mp4" />

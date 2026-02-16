@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
+import { ScrollReveal } from "@/components/layout/scroll-reveal";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import "./globals.css";
 
@@ -38,10 +39,22 @@ export const metadata: Metadata = {
       "Expert en performance, strategie sportive, preparation mentale et structuration de projet sportif.",
     images: [
       {
-        url: "/logo.png",
+        url: "/dsc01673.jpg",
+        width: 1280,
+        height: 853,
+        alt: "Elite Sports Coaching & Conseils - coaching sportif et conseil de performance",
+      },
+      {
+        url: "/Depassement-de-soi.webp",
         width: 1200,
         height: 630,
-        alt: "Elite Sports Coaching & Conseils",
+        alt: "Depassement de soi - Elite Sports Coaching & Conseils",
+      },
+      {
+        url: "/logo.png",
+        width: 2000,
+        height: 2000,
+        alt: "Logo Elite Sports Coaching & Conseils",
       },
     ],
   },
@@ -50,15 +63,26 @@ export const metadata: Metadata = {
     title: "Elite Sports Coaching & Conseils",
     description:
       "Coaching sportif haut niveau, conseil strategique et accompagnement de la performance.",
-    images: ["/logo.png"],
+    images: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
+    shortcut: [{ url: "/logo.png", type: "image/png" }],
+    apple: [{ url: "/logo.png", type: "image/png" }],
     icon: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/logo.png", type: "image/png", sizes: "32x32" },
+      { url: "/logo.png", type: "image/png", sizes: "192x192" },
+      { url: "/logo.png", type: "image/png", sizes: "512x512" },
       { url: "/favicon.ico" },
     ],
   },
@@ -82,6 +106,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollReveal />
           <Navbar />
           {children}
         </ThemeProvider>

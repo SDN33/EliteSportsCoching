@@ -12,7 +12,10 @@ const links = [
 export const FooterSection = () => {
   return (
     <footer id="footer" className="container pb-12">
-      <div className="relative overflow-hidden rounded-[1.9rem] border border-border/70 bg-card/82 px-6 py-8 shadow-[0_20px_55px_-38px_rgba(15,96,148,0.7)] md:px-10 md:py-10">
+      <div
+        data-reveal
+        className="relative overflow-hidden rounded-[1.9rem] border border-border/70 bg-card/82 px-6 py-8 shadow-[0_20px_55px_-38px_rgba(15,96,148,0.7)] md:px-10 md:py-10"
+      >
         <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-primary/12 blur-3xl" />
 
         <div className="relative flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
@@ -39,7 +42,11 @@ export const FooterSection = () => {
         </div>
 
         <div className="relative mt-8 border-t border-border/70 pt-5 text-xs text-muted-foreground">
-          {`© ${new Date().getFullYear()} Elite Sports Coaching & Conseils. Tous droits reserves.`}
+          {`© ${new Date().getFullYear()} Elite Sports Coaching & Conseils. Tous droits reserves. - Site propulsé par `}
+          <a href="https://stillinov.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            Still-inov Agency
+          </a>
+          .
         </div>
       </div>
     </footer>

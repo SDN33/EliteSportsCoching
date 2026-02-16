@@ -60,7 +60,7 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="container pb-24 pt-16 md:pb-32 md:pt-24">
       <div className="grid gap-6 lg:grid-cols-[1fr_1.12fr] lg:gap-8">
-        <div className="section-shell flex flex-col gap-6">
+        <div data-reveal="left" className="section-shell flex flex-col gap-6">
           <div>
             <p className="section-kicker">Demande d&apos;accompagnement</p>
             <h2 className="mt-2 font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
@@ -76,7 +76,7 @@ export const ContactSection = () => {
           </div>
 
           <div className="grid gap-3">
-            <article className="surface-soft p-4">
+            <article data-reveal data-reveal-delay="1" className="surface-soft p-4">
               <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
                 <Mail className="size-4 text-primary" />
                 E-mail direct
@@ -85,14 +85,14 @@ export const ContactSection = () => {
                 contact@elitesportscoching.com
               </p>
             </article>
-            <article className="surface-soft p-4">
+            <article data-reveal data-reveal-delay="2" className="surface-soft p-4">
               <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
                 <Phone className="size-4 text-primary" />
                 Appel strategique
               </div>
               <p className="text-sm text-muted-foreground">+33 6 00 00 00 00</p>
             </article>
-            <article className="surface-soft p-4">
+            <article data-reveal data-reveal-delay="3" className="surface-soft p-4">
               <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
                 <Building2 className="size-4 text-primary" />
                 Format d&apos;accompagnement
@@ -101,7 +101,7 @@ export const ContactSection = () => {
                 Athletes, clubs, staffs, centres de formation
               </p>
             </article>
-            <article className="surface-soft p-4">
+            <article data-reveal data-reveal-delay="4" className="surface-soft p-4">
               <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
                 <MapPin className="size-4 text-primary" />
                 Intervention
@@ -113,7 +113,11 @@ export const ContactSection = () => {
           </div>
         </div>
 
-        <Card className="rounded-[1.7rem] border-border/70 bg-card/82 shadow-[0_25px_60px_-40px_rgba(15,96,148,0.75)]">
+        <Card
+          data-reveal="right"
+          data-reveal-delay="1"
+          className="rounded-[1.7rem] border-border/70 bg-card/82 shadow-[0_25px_60px_-40px_rgba(15,96,148,0.75)]"
+        >
           <CardContent className="p-5 pt-6 md:p-7">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-5">

@@ -16,7 +16,7 @@ const serviceList = [
 export const ServicesSection = () => {
   return (
     <section id="domaines" className="container py-16 md:py-24">
-      <div className="mb-10 text-center md:mb-12">
+      <div data-reveal className="mb-10 text-center md:mb-12">
         <p className="section-kicker">Offres & expertises</p>
         <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
           Du jeune talent au haut niveau,
@@ -29,6 +29,8 @@ export const ServicesSection = () => {
         {serviceList.map((service, index) => (
           <article
             key={service}
+            data-reveal
+            data-reveal-delay={((index % 4) + 1).toString()}
             className="group rounded-3xl border border-border/70 bg-card/80 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_18px_40px_-28px_rgba(37,185,255,0.8)]"
           >
             <Badge variant="outline" className="mb-4 border-primary/45 bg-primary/10">

@@ -25,7 +25,7 @@ export const BenefitsSection = () => {
   return (
     <section id="presentation" className="container py-16 md:py-24">
       <div className="grid gap-8 lg:grid-cols-[1.06fr_0.94fr] lg:gap-10">
-        <div className="section-shell flex flex-col gap-5 md:gap-6">
+        <div data-reveal="left" className="section-shell flex flex-col gap-5 md:gap-6">
           <p className="section-kicker">Expertise</p>
           <h2 className="font-title text-balance-pretty text-3xl font-semibold leading-tight md:text-5xl">
             Eddy Saint-Cyr, ex-joueur professionnel
@@ -48,6 +48,8 @@ export const BenefitsSection = () => {
           {pillars.map(({ icon: Icon, title, description }, index) => (
             <article
               key={title}
+              data-reveal="right"
+              data-reveal-delay={(index + 1).toString()}
               className="group relative overflow-hidden rounded-3xl border border-border/70 bg-card/75 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_18px_40px_-28px_rgba(37,185,255,0.85)]"
             >
               <span className="absolute right-5 top-4 text-5xl font-semibold text-primary/12">

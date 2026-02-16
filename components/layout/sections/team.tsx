@@ -44,7 +44,7 @@ const valuePillars = [
 export const TeamSection = () => {
   return (
     <section id="valeurs" className="container py-16 md:py-24">
-      <div className="mb-10 text-center md:mb-12">
+      <div data-reveal className="mb-10 text-center md:mb-12">
         <p className="section-kicker">ADN de l&apos;accompagnement</p>
         <h2 className="font-title text-3xl font-semibold md:text-5xl">
           Des valeurs fortes pour
@@ -54,9 +54,11 @@ export const TeamSection = () => {
       </div>
 
       <div className="mb-8 flex flex-wrap justify-center gap-2.5 md:gap-3">
-        {values.map((value) => (
+        {values.map((value, index) => (
           <span
             key={value}
+            data-reveal
+            data-reveal-delay={((index % 4) + 1).toString()}
             className="rounded-full border border-border/70 bg-card/80 px-4 py-2 text-sm font-medium"
           >
             {value}
@@ -65,9 +67,11 @@ export const TeamSection = () => {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {valuePillars.map(({ icon: Icon, title, text }) => (
+        {valuePillars.map(({ icon: Icon, title, text }, index) => (
           <article
             key={title}
+            data-reveal
+            data-reveal-delay={((index % 4) + 1).toString()}
             className="rounded-3xl border border-border/70 bg-card/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_18px_42px_-30px_rgba(37,185,255,0.85)]"
           >
             <div className="mb-4 inline-flex rounded-xl border border-primary/25 bg-primary/10 p-3">
