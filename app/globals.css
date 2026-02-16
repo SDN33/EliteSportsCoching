@@ -6,150 +6,140 @@ html {
   scroll-behavior: smooth;
 }
 
-/* *=========== Default theme =========== */
-/* @layer base {
+@layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --background: 212 57% 97%;
+    --foreground: 220 43% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 220 43% 12%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 43% 12%;
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 196 100% 48%;
+    --primary-foreground: 210 33% 98%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 214 40% 93%;
+    --secondary-foreground: 220 43% 12%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --muted: 214 40% 93%;
+    --muted-foreground: 220 18% 40%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --accent: 42 72% 55%;
+    --accent-foreground: 220 47% 14%;
 
-    --ring: 240 10% 3.9%;
+    --destructive: 0 80% 56%;
+    --destructive-foreground: 210 33% 98%;
 
-    --radius: 0.5rem;
+    --border: 214 31% 84%;
+    --input: 214 31% 84%;
+    --ring: 196 100% 48%;
+    --radius: 1rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 220 45% 6%;
+    --foreground: 214 30% 95%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --card: 220 33% 10%;
+    --card-foreground: 214 30% 95%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 45% 6%;
+    --popover-foreground: 214 30% 95%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --primary: 195 100% 57%;
+    --primary-foreground: 220 43% 10%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --secondary: 220 29% 16%;
+    --secondary-foreground: 214 30% 95%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --muted: 220 29% 16%;
+    --muted-foreground: 217 16% 69%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --accent: 43 66% 61%;
+    --accent-foreground: 220 43% 10%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --destructive: 0 74% 54%;
+    --destructive-foreground: 214 30% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --ring: 240 4.9% 83.9%;
-  }
-} */
-
-/* *=========== Orange theme =========== */
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-
-    --primary: 24.6 95% 53.1%;
-    --primary-foreground: 60 9.1% 97.8%;
-
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
-
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 24.6 95% 53.1%;
-    --radius: 0.5rem;
+    --border: 220 24% 23%;
+    --input: 220 24% 23%;
+    --ring: 195 100% 57%;
   }
 
-  .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-
-    --card: 24 9.8% 8%;
-    --card-foreground: 0 0% 95%;
-
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-
-    --primary: 20.5 90.2% 48.2%;
-    --primary-foreground: 60 9.1% 97.8%;
-
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
-
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
-
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
-
-    --destructive: 0 72.2% 50.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
-
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 20.5 90.2% 48.2%;
-  }
-}
-
-.shadow-light {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.085);
-}
-
-.shadow-dark {
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
-}
-
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at 8% 12%, rgba(56, 189, 248, 0.13), transparent 30%),
+      radial-gradient(circle at 84% 0%, rgba(232, 200, 122, 0.12), transparent 22%),
+      linear-gradient(180deg, rgba(9, 17, 29, 0.08), rgba(9, 17, 29, 0));
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-image:
+      radial-gradient(circle at 10% 10%, rgba(46, 196, 255, 0.14), transparent 32%),
+      radial-gradient(circle at 90% 0%, rgba(232, 200, 122, 0.1), transparent 26%),
+      linear-gradient(180deg, rgba(2, 8, 16, 0.25), rgba(2, 8, 16, 0));
+  }
+}
+
+@layer utilities {
+  .font-title {
+    font-family: "Avenir Next Condensed", "Franklin Gothic Medium", "Trebuchet MS",
+      sans-serif;
+    letter-spacing: 0.01em;
+  }
+
+  .font-body {
+    font-family: "Avenir Next", "IBM Plex Sans", "Segoe UI", sans-serif;
+  }
+
+  .section-kicker {
+    @apply text-xs uppercase tracking-[0.26em] text-primary;
+  }
+
+  .section-shell {
+    border-radius: 1.7rem;
+    border: 1px solid hsl(var(--border) / 0.7);
+    background-color: hsl(var(--card) / 0.72);
+    padding: 1.5rem;
+    backdrop-filter: blur(6px);
+  }
+
+  @media (min-width: 768px) {
+    .section-shell {
+      padding: 2rem;
+    }
+  }
+
+  .surface-soft {
+    border-radius: 1rem;
+    border: 1px solid hsl(var(--border) / 0.7);
+    background-color: hsl(var(--background) / 0.7);
+    backdrop-filter: blur(6px);
+  }
+
+  .text-balance-pretty {
+    text-wrap: balance;
+  }
+}
+
+.animate-logo-float {
+  animation: logo-float 4.8s ease-in-out infinite;
+}
+
+@keyframes logo-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
   }
 }

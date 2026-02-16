@@ -1,74 +1,37 @@
-"use client";
-
-import { Icon } from "@/components/ui/icon";
-import { Marquee } from "@devnomic/marquee";
-import "@devnomic/marquee/dist/index.css";
-import { icons } from "lucide-react";
-interface sponsorsProps {
-  icon: string;
-  name: string;
-}
-
-const sponsors: sponsorsProps[] = [
-  {
-    icon: "Crown",
-    name: "Acmebrand",
-  },
-  {
-    icon: "Vegan",
-    name: "Acmelogo",
-  },
-  {
-    icon: "Ghost",
-    name: "Acmesponsor",
-  },
-  {
-    icon: "Puzzle",
-    name: "Acmeipsum",
-  },
-  {
-    icon: "Squirrel",
-    name: "Acme",
-  },
-  {
-    icon: "Cookie",
-    name: "Accmee",
-  },
-  {
-    icon: "Drama",
-    name: "Acmetech",
-  },
-];
+import Image from "next/image";
 
 export const SponsorsSection = () => {
   return (
-    <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
-      </h2>
+    <section id="identite" className="container py-16 md:py-24">
+      <div className="section-shell relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_14%_10%,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_86%_0%,rgba(232,200,122,0.16),transparent_30%)]" />
 
-      <div className="mx-auto">
-        <Marquee
-          className="gap-[3rem]"
-          fade
-          innerClassName="gap-[3rem]"
-          pauseOnHover
-        >
-          {sponsors.map(({ icon, name }) => (
-            <div
-              key={name}
-              className="flex items-center text-xl md:text-2xl font-medium"
-            >
-              <Icon
-                name={icon as keyof typeof icons}
-                size={32}
-                color="white"
-                className="mr-2"
+        <div className="relative mb-8 text-center md:mb-10">
+          <p className="section-kicker">Positionnement</p>
+          <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
+            Conseiller sportif
+            <br className="hidden md:block" />
+            & Conseil Strategique pour la Performance
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
+            Elite Sports Coaching & Conseils se positionne sur l&apos;accompagnement
+            de la performance individuelle et collective: athletes, clubs,
+            staffs et projets sportifs de haut niveau.
+          </p>
+        </div>
+
+        <article className="relative mx-auto max-w-5xl rounded-3xl border border-border/70 bg-card/82 p-4 shadow-[0_20px_50px_-30px_rgba(25,100,150,0.6)] sm:p-6">
+          <div className="flex min-h-[230px] items-center justify-center rounded-2xl border border-border/40 bg-gradient-to-b from-white to-slate-100 p-6 dark:from-slate-950 dark:to-black sm:min-h-[310px] md:min-h-[360px]">
+              <Image
+                src="/dsc01673.jpg"
+                alt="Elite Sports Coaching & Conseils"
+                width={780}
+                height={280}
+                priority
+                className="w-full max-w-[780px] object-cover"
               />
-              {name}
-            </div>
-          ))}
-        </Marquee>
+          </div>
+        </article>
       </div>
     </section>
   );

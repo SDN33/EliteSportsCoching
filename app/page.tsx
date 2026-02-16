@@ -1,58 +1,77 @@
+import type { Metadata } from "next";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
-import { FAQSection } from "@/components/layout/sections/faq";
 import { FeaturesSection } from "@/components/layout/sections/features";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
-import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
-export const metadata = {
-  title: "Shadcn - Landing template",
-  description: "Free Shadcn landing page for developers",
-  openGraph: {
-    type: "website",
-    url: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Shadcn - Landing template",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
-    images: [
-      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-    ],
-  },
+export const metadata: Metadata = {
+  title: "Coaching sportif & conseil de performance",
+  description:
+    "Elite Sports Coaching & Conseils accompagne athletes, clubs et structures avec une methode orientee resultats: performance, strategie sportive, mental et progression durable.",
+  keywords: [
+    "coaching sportif haut niveau",
+    "conseil performance sportive",
+    "accompagnement athlete",
+    "accompagnement club sportif",
+    "strategie de performance",
+    "preparation mentale sportive",
+  ],
 };
 
 export default function Home() {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Elite Sports Coaching & Conseils",
+    description:
+      "Cabinet de coaching sportif et de conseil strategique pour la performance individuelle et collective.",
+    email: "contact@elitesportscoching.com",
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Elite Sports Coaching & Conseils",
+    areaServed: "France",
+    serviceType: [
+      "Coaching sportif",
+      "Conseil sportif",
+      "Preparation mentale",
+      "Structuration de projet sportif",
+    ],
+    description:
+      "Accompagnement de la performance sportive: strategie, mental, methodologie et progression durable pour athletes et organisations.",
+    provider: {
+      "@type": "Person",
+      name: "Eddy Saint-Cyr",
+    },
+    email: "contact@elitesportscoching.com",
+    telephone: "+33 6 00 00 00 00",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <HeroSection />
       <SponsorsSection />
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
-      <TestimonialSection />
-      <TeamSection />
       <CommunitySection />
-      <PricingSection />
+      <TeamSection />
       <ContactSection />
-      <FAQSection />
       <FooterSection />
     </>
   );

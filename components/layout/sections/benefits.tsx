@@ -1,83 +1,66 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
+import { Medal, Target, Users2 } from "lucide-react";
 
-interface BenefitsProps {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-const benefitList: BenefitsProps[] = [
+const pillars = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: Medal,
+    title: "Expertise terrain",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Une lecture concrete des cycles de performance issue du haut niveau et de la competition.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: Target,
+    title: "Vision strategique",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Des plans d'action structures pour transformer des objectifs ambitieux en trajectoires mesurables.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: Users2,
+    title: "Accompagnement humain",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
-  },
-  {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Un cadre exigeant et bienveillant pour faire progresser l'athlete, le staff ou le projet collectif.",
   },
 ];
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
-      <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
-        <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+    <section id="presentation" className="container py-16 md:py-24">
+      <div className="grid gap-8 lg:grid-cols-[1.06fr_0.94fr] lg:gap-10">
+        <div className="section-shell flex flex-col gap-5 md:gap-6">
+          <p className="section-kicker">Expertise</p>
+          <h2 className="font-title text-balance-pretty text-3xl font-semibold leading-tight md:text-5xl">
+            Eddy Saint-Cyr, ex-joueur professionnel
+            <br className="hidden md:block" />
+            devenu architecte de la performance multisport.
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+          <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
+            Son approche relie coaching sportif, preparation mentale, strategie
+            de progression et accompagnement humain. Chaque mission demarre par
+            un diagnostic precis, puis un plan d&apos;action clair et mesurable.
+          </p>
+          <p className="leading-relaxed text-muted-foreground">
+            Elite Sports Coaching & Conseils combine exigence du haut niveau,
+            transmission terrain et pilotage strategique pour accelerer la
+            performance durable des athletes, clubs et organisations sportives.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-4 w-full">
-          {benefitList.map(({ icon, title, description }, index) => (
-            <Card
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          {pillars.map(({ icon: Icon, title, description }, index) => (
+            <article
               key={title}
-              className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
+              className="group relative overflow-hidden rounded-3xl border border-border/70 bg-card/75 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_18px_40px_-28px_rgba(37,185,255,0.85)]"
             >
-              <CardHeader>
-                <div className="flex justify-between">
-                  <Icon
-                    name={icon as keyof typeof icons}
-                    size={32}
-                    color="hsl(var(--primary))"
-                    className="mb-6 text-primary"
-                  />
-                  <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
-                    0{index + 1}
-                  </span>
-                </div>
-
-                <CardTitle>{title}</CardTitle>
-              </CardHeader>
-
-              <CardContent className="text-muted-foreground">
+              <span className="absolute right-5 top-4 text-5xl font-semibold text-primary/12">
+                0{index + 1}
+              </span>
+              <div className="mb-4 inline-flex rounded-xl border border-primary/25 bg-primary/10 p-3">
+                <Icon className="size-5 text-primary" />
+              </div>
+              <h3 className="mb-2 text-xl font-semibold">{title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
                 {description}
-              </CardContent>
-            </Card>
+              </p>
+            </article>
           ))}
         </div>
       </div>

@@ -1,79 +1,43 @@
 import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 
-enum ProService {
-  YES = 1,
-  NO = 0,
-}
-interface ServiceProps {
-  title: string;
-  pro: ProService;
-  description: string;
-}
-const serviceList: ServiceProps[] = [
-  {
-    title: "Custom Domain Integration",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "Social Media Integrations",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
-    pro: 0,
-  },
-  {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
-  },
+const serviceList = [
+  "Conseil sportif de haut niveau",
+  "Coaching & Conseils performance individuel",
+  "Preparation mentale",
+  "Accompagnement d'athletes",
+  "Accompagnement de clubs et staffs",
+  "Structuration de projet sportif",
+  "Developpement du potentiel",
+  "Formation et transmission",
+  "Programme jeunes talents",
+  "Performance collective multisport",
 ];
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Services
-      </h2>
+    <section id="domaines" className="container py-16 md:py-24">
+      <div className="mb-10 text-center md:mb-12">
+        <p className="section-kicker">Offres & expertises</p>
+        <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
+          Du jeune talent au haut niveau,
+          <br className="hidden md:block" />
+          un accompagnement sportif a 360 degres.
+        </h2>
+      </div>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
-      </h2>
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
-      </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
-        {serviceList.map(({ title, description, pro }) => (
-          <Card
-            key={title}
-            className="bg-muted/60 dark:bg-card h-full relative"
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {serviceList.map((service, index) => (
+          <article
+            key={service}
+            className="group rounded-3xl border border-border/70 bg-card/80 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_18px_40px_-28px_rgba(37,185,255,0.8)]"
           >
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-              <CardDescription>{description}</CardDescription>
-            </CardHeader>
-            <Badge
-              data-pro={ProService.YES === pro}
-              variant="secondary"
-              className="absolute -top-2 -right-3 data-[pro=false]:hidden"
-            >
-              PRO
+            <Badge variant="outline" className="mb-4 border-primary/45 bg-primary/10">
+              Axe {String(index + 1).padStart(2, "0")}
             </Badge>
-          </Card>
+            <p className="text-sm font-semibold leading-relaxed md:text-base">
+              {service}
+            </p>
+          </article>
         ))}
       </div>
     </section>

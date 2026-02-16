@@ -1,14 +1,11 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Building2, Clock, Mail, Phone } from "lucide-react";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Building2, Mail, MapPin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Form,
   FormControl,
@@ -18,7 +15,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -29,217 +25,204 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
-  firstName: z.string().min(2).max(255),
-  lastName: z.string().min(2).max(255),
+  fullName: z.string().min(2).max(100),
   email: z.string().email(),
-  subject: z.string().min(2).max(255),
-  message: z.string(),
+  profile: z.string().min(2).max(100),
+  goal: z.string().min(6).max(220),
+  message: z.string().min(10).max(1000),
 });
 
 export const ContactSection = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
+      fullName: "",
       email: "",
-      subject: "Web Development",
+      profile: "Athlete individuel",
+      goal: "",
       message: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    const { firstName, lastName, email, subject, message } = values;
-    console.log(values);
+  const onSubmit = (values: z.infer<typeof formSchema>) => {
+    const body = [
+      `Nom: ${values.fullName}`,
+      `Email: ${values.email}`,
+      `Profil: ${values.profile}`,
+      `Objectif principal: ${values.goal}`,
+      "",
+      values.message,
+    ].join("%0D%0A");
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
-
-    window.location.href = mailToLink;
-  }
+    window.location.href = `mailto:contact@elitesportscoching.com?subject=Demande%20d'accompagnement%20Elite%20Sports%20Coaching%20%26%20Conseils%20Premium&body=${body}`;
+  };
 
   return (
-    <section id="contact" className="container py-24 sm:py-32">
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <div className="mb-4">
-            <h2 className="text-lg text-primary mb-2 tracking-wider">
-              Contact
+    <section id="contact" className="container pb-24 pt-16 md:pb-32 md:pt-24">
+      <div className="grid gap-6 lg:grid-cols-[1fr_1.12fr] lg:gap-8">
+        <div className="section-shell flex flex-col gap-6">
+          <div>
+            <p className="section-kicker">Demande d&apos;accompagnement</p>
+            <h2 className="mt-2 font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
+              Construisons votre trajectoire sportive.
+              <br className="hidden md:block" />
+              Structurons votre performance durable.
             </h2>
-
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              Premier echange strategique pour analyser vos objectifs, vos
+              contraintes et votre contexte de competition, puis definir une
+              feuille de route performante et realiste.
+            </p>
           </div>
-          <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
-          </p>
 
-          <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex gap-2 mb-1">
-                <Building2 />
-                <div className="font-bold">Find us</div>
+          <div className="grid gap-3">
+            <article className="surface-soft p-4">
+              <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
+                <Mail className="size-4 text-primary" />
+                E-mail direct
               </div>
-
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
-            </div>
-
-            <div>
-              <div className="flex gap-2 mb-1">
-                <Phone />
-                <div className="font-bold">Call us</div>
+              <p className="text-sm text-muted-foreground">
+                contact@elitesportscoching.com
+              </p>
+            </article>
+            <article className="surface-soft p-4">
+              <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
+                <Phone className="size-4 text-primary" />
+                Appel strategique
               </div>
-
-              <div>+1 (619) 123-4567</div>
-            </div>
-
-            <div>
-              <div className="flex gap-2 mb-1">
-                <Mail />
-                <div className="font-bold">Mail US</div>
+              <p className="text-sm text-muted-foreground">+33 6 00 00 00 00</p>
+            </article>
+            <article className="surface-soft p-4">
+              <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
+                <Building2 className="size-4 text-primary" />
+                Format d&apos;accompagnement
               </div>
-
-              <div>leomirandadev@gmail.com</div>
-            </div>
-
-            <div>
-              <div className="flex gap-2">
-                <Clock />
-                <div className="font-bold">Visit us</div>
+              <p className="text-sm text-muted-foreground">
+                Athletes, clubs, staffs, centres de formation
+              </p>
+            </article>
+            <article className="surface-soft p-4">
+              <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
+                <MapPin className="size-4 text-primary" />
+                Intervention
               </div>
-
-              <div>
-                <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
-              </div>
-            </div>
+              <p className="text-sm text-muted-foreground">
+                France et international, en presentiel ou distanciel
+              </p>
+            </article>
           </div>
         </div>
 
-        <Card className="bg-muted/60 dark:bg-card">
-          <CardHeader className="text-primary text-2xl"> </CardHeader>
-          <CardContent>
+        <Card className="rounded-[1.7rem] border-border/70 bg-card/82 shadow-[0_25px_60px_-40px_rgba(15,96,148,0.75)]">
+          <CardContent className="p-5 pt-6 md:p-7">
             <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="grid w-full gap-4"
-              >
-                <div className="flex flex-col md:!flex-row gap-8">
-                  <FormField
-                    control={form.control}
-                    name="firstName"
-                    render={({ field }) => (
-                      <FormItem className="w-full">
-                        <FormLabel>First Name</FormLabel>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-5">
+                <FormField
+                  control={form.control}
+                  name="fullName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Nom complet</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Votre nom"
+                          className="h-11 rounded-xl bg-background/75"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input
+                          type="email"
+                          placeholder="vous@exemple.com"
+                          className="h-11 rounded-xl bg-background/75"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="profile"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Profil</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <SelectTrigger className="h-11 rounded-xl bg-background/75">
+                            <SelectValue placeholder="Selectionnez votre profil" />
+                          </SelectTrigger>
                         </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="lastName"
-                    render={({ field }) => (
-                      <FormItem className="w-full">
-                        <FormLabel>Last Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Miranda" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+                        <SelectContent>
+                          <SelectItem value="Athlete individuel">Athlete individuel</SelectItem>
+                          <SelectItem value="Club ou staff">Club ou staff</SelectItem>
+                          <SelectItem value="Jeune talent">Jeune talent</SelectItem>
+                          <SelectItem value="Structure sportive">Structure sportive</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                <div className="flex flex-col gap-1.5">
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                          <Input
-                            type="email"
-                            placeholder="leomirandadev@gmail.com"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+                <FormField
+                  control={form.control}
+                  name="goal"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Objectif prioritaire</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder="Ex: structurer une progression sur 6 mois"
+                          className="h-11 rounded-xl bg-background/75"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                <div className="flex flex-col gap-1.5">
-                  <FormField
-                    control={form.control}
-                    name="subject"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Subject</FormLabel>
-                        <Select
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                        >
-                          <FormControl>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select a subject" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
-                            </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
-                            </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
-                            </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
-                            </SelectItem>
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Votre contexte</FormLabel>
+                      <FormControl>
+                        <Textarea
+                          rows={5}
+                          placeholder="Parlez de vos enjeux, contraintes, ambitions et echeances."
+                          className="resize-none rounded-xl bg-background/75"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                <div className="flex flex-col gap-1.5">
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                          <Textarea
-                            rows={5}
-                            placeholder="Your message..."
-                            className="resize-none"
-                            {...field}
-                          />
-                        </FormControl>
-
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-
-                <Button className="mt-4">Send message</Button>
+                <Button type="submit" className="rounded-full py-6 text-sm font-semibold">
+                  Revelons votre potentiel
+                </Button>
               </form>
             </Form>
           </CardContent>
-
-          <CardFooter></CardFooter>
         </Card>
-      </section>
+      </div>
     </section>
   );
 };
