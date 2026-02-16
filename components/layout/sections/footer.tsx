@@ -2,8 +2,8 @@ import Link from "next/link";
 import { BrandLogo } from "@/components/layout/brand-logo";
 
 const links = [
-  { href: "#presentation", label: "Presentation" },
-  { href: "#methodologie", label: "Methodologie" },
+  { href: "#presentation", label: "Présentation" },
+  { href: "#methodologie", label: "Méthodologie" },
   { href: "#domaines", label: "Interventions" },
   { href: "#valeurs", label: "Valeurs" },
   { href: "#contact", label: "Contact" },
@@ -22,8 +22,8 @@ export const FooterSection = () => {
           <div>
             <BrandLogo className="w-[220px]" />
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Coaching sportif, conseil strategique et accompagnement de la
-              performance pour athletes, clubs et structures engagees vers le
+              Coaching sportif, conseil stratégique et accompagnement de la
+              performance pour athlètes, clubs et structures engagées vers le
               haut niveau.
             </p>
           </div>
@@ -42,7 +42,7 @@ export const FooterSection = () => {
         </div>
 
         <div className="relative mt-8 border-t border-border/70 pt-5 text-xs text-muted-foreground">
-          {`© ${new Date().getFullYear()} Elite Sports Coaching & Conseils. Tous droits reserves. - Site propulsé par `}
+          {`© ${new Date().getFullYear()} Elite Sports Coaching & Conseils. Tous droits réservés. - Site propulsé par `}
           <a href="https://stillinov.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             Still-inov Agency
           </a>

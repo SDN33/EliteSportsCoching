@@ -1,10 +1,10 @@
 import { HeartHandshake, Lightbulb, ShieldCheck, Sparkles, Trophy } from "lucide-react";
 
 const values = [
-  "Depassement de soi",
-  "Perseverance",
-  "Methodologie",
-  "Strategie",
+  "Dépassement de soi",
+  "Persévérance",
+  "Méthodologie",
+  "Stratégie",
   "Discipline",
   "Bienveillance",
   "Transmission",
@@ -17,22 +17,22 @@ const valuePillars = [
   {
     icon: Trophy,
     title: "Exigence de haut niveau",
-    text: "Des standards eleves pour transformer la rigueur quotidienne en resultats concrets.",
+    text: "Des standards élevés pour transformer la rigueur quotidienne en résultats concrets.",
   },
   {
     icon: ShieldCheck,
-    title: "Cadre structure",
-    text: "Une methode lisible qui securise la progression et evite la dispersion.",
+    title: "Cadre structuré",
+    text: "Une méthode lisible qui sécurise la progression et évite la dispersion.",
   },
   {
     icon: HeartHandshake,
     title: "Relation de confiance",
-    text: "Une approche humaine et engagee pour faire emerger un potentiel durable.",
+    text: "Une approche humaine et engagée pour faire émerger un potentiel durable.",
   },
   {
     icon: Lightbulb,
-    title: "Vision strategique",
-    text: "Anticiper, prioriser et decider avec clarte dans des environnements competitifs.",
+    title: "Vision stratégique",
+    text: "Anticiper, prioriser et décider avec clarté dans des environnements compétitifs.",
   },
   {
     icon: Sparkles,

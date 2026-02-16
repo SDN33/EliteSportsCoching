@@ -1,9 +1,9 @@
 const markers = [
   "Lecture du jeu et intelligence collective",
   "Culture de centre de formation et progression individuelle",
-  "Decision sous pression et adaptation tactique",
-  "Leadership terrain et cohesion de groupe",
-  "Vision a long terme de la performance",
+  "Décision sous pression et adaptation tactique",
+  "Leadership terrain et cohésion de groupe",
+  "Vision à long terme de la performance",
 ];
 
 export const CommunitySection = () => {
@@ -27,7 +27,7 @@ export const CommunitySection = () => {
             Sans enfermer l&apos;accompagnement dans une seule discipline, Elite
             Sports Coaching & Conseils mobilise les codes du football de haut
             niveau: intelligence collective, vision tactique, lecture du jeu et
-            maitrise des moments decisifs.
+            maîtrise des moments décisifs.
           </p>
 
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

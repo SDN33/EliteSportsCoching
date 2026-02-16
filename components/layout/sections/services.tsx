@@ -3,11 +3,11 @@ import { Badge } from "@/components/ui/badge";
 const serviceList = [
   "Conseil sportif de haut niveau",
   "Coaching & Conseils performance individuel",
-  "Preparation mentale",
-  "Accompagnement d'athletes",
+  "Préparation mentale",
+  "Accompagnement d'athlètes",
   "Accompagnement de clubs et staffs",
   "Structuration de projet sportif",
-  "Developpement du potentiel",
+  "Développement du potentiel",
   "Formation et transmission",
   "Programme jeunes talents",
   "Performance collective multisport",
@@ -21,7 +21,7 @@ export const ServicesSection = () => {
         <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
           Du jeune talent au haut niveau,
           <br className="hidden md:block" />
-          un accompagnement sportif a 360 degres.
+          un accompagnement sportif à 360 degrés.
         </h2>
       </div>
 

@@ -43,11 +43,11 @@ export const FeaturesSection = () => {
   return (
     <section id="methodologie" className="container py-16 md:py-24">
       <div data-reveal className="mb-10 text-center md:mb-12">
-        <p className="section-kicker">Methode de performance</p>
+        <p className="section-kicker">Méthode de performance</p>
         <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
-          Une methodologie sportive
+          Une méthodologie sportive
           <br className="hidden md:block" />
-          orientee resultats et progression durable.
+          orientée résultats et progression durable.
         </h2>
       </div>
 

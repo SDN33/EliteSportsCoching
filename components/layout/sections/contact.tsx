@@ -38,7 +38,7 @@ export const ContactSection = () => {
     defaultValues: {
       fullName: "",
       email: "",
-      profile: "Athlete individuel",
+      profile: "Athlète individuel",
       goal: "",
       message: "",
     },
@@ -69,9 +69,9 @@ export const ContactSection = () => {
               Structurons votre performance durable.
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Premier echange strategique pour analyser vos objectifs, vos
-              contraintes et votre contexte de competition, puis definir une
-              feuille de route performante et realiste.
+              Premier échange stratégique pour analyser vos objectifs, vos
+              contraintes et votre contexte de compétition, puis définir une
+              feuille de route performante et réaliste.
             </p>
           </div>
 
@@ -88,7 +88,7 @@ export const ContactSection = () => {
             <article data-reveal data-reveal-delay="2" className="surface-soft p-4">
               <div className="mb-1 flex items-center gap-2 text-sm font-semibold">
                 <Phone className="size-4 text-primary" />
-                Appel strategique
+                Appel stratégique
               </div>
               <p className="text-sm text-muted-foreground">+33 6 00 00 00 00</p>
             </article>
@@ -98,7 +98,7 @@ export const ContactSection = () => {
                 Format d&apos;accompagnement
               </div>
               <p className="text-sm text-muted-foreground">
-                Athletes, clubs, staffs, centres de formation
+                Athlètes, clubs, staffs, centres de formation
               </p>
             </article>
             <article data-reveal data-reveal-delay="4" className="surface-soft p-4">
@@ -107,7 +107,7 @@ export const ContactSection = () => {
                 Intervention
               </div>
               <p className="text-sm text-muted-foreground">
-                France et international, en presentiel ou distanciel
+                France et international, en présentiel ou distanciel
               </p>
             </article>
           </div>
@@ -167,11 +167,11 @@ export const ContactSection = () => {
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="h-11 rounded-xl bg-background/75">
-                            <SelectValue placeholder="Selectionnez votre profil" />
+                            <SelectValue placeholder="Sélectionnez votre profil" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Athlete individuel">Athlete individuel</SelectItem>
+                          <SelectItem value="Athlète individuel">Athlète individuel</SelectItem>
                           <SelectItem value="Club ou staff">Club ou staff</SelectItem>
                           <SelectItem value="Jeune talent">Jeune talent</SelectItem>
                           <SelectItem value="Structure sportive">Structure sportive</SelectItem>
@@ -209,7 +209,7 @@ export const ContactSection = () => {
                       <FormControl>
                         <Textarea
                           rows={5}
-                          placeholder="Parlez de vos enjeux, contraintes, ambitions et echeances."
+                          placeholder="Parlez de vos enjeux, contraintes, ambitions et échéances."
                           className="resize-none rounded-xl bg-background/75"
                           {...field}
                         />
@@ -220,7 +220,7 @@ export const ContactSection = () => {
                 />
 
                 <Button type="submit" className="rounded-full py-6 text-sm font-semibold">
-                  Revelons votre potentiel
+                  Révélons votre potentiel
                 </Button>
               </form>
             </Form>

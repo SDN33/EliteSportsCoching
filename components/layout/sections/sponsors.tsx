@@ -11,11 +11,11 @@ export const SponsorsSection = () => {
           <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
             Conseiller sportif
             <br className="hidden md:block" />
-            & Conseil Strategique pour la Performance
+            & Conseil Stratégique pour la Performance
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
             Elite Sports Coaching & Conseils se positionne sur l&apos;accompagnement
-            de la performance individuelle et collective: athletes, clubs,
+            de la performance individuelle et collective: athlètes, clubs,
             staffs et projets sportifs de haut niveau.
           </p>
         </div>

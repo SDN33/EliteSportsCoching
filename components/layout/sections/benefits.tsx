@@ -5,19 +5,19 @@ const pillars = [
     icon: Medal,
     title: "Expertise terrain",
     description:
-      "Une lecture concrete des cycles de performance issue du haut niveau et de la competition.",
+      "Une lecture concrète des cycles de performance issue du haut niveau et de la compétition.",
   },
   {
     icon: Target,
-    title: "Vision strategique",
+    title: "Vision stratégique",
     description:
-      "Des plans d'action structures pour transformer des objectifs ambitieux en trajectoires mesurables.",
+      "Des plans d'action structurés pour transformer des objectifs ambitieux en trajectoires mesurables.",
   },
   {
     icon: Users2,
     title: "Accompagnement humain",
     description:
-      "Un cadre exigeant et bienveillant pour faire progresser l'athlete, le staff ou le projet collectif.",
+      "Un cadre exigeant et bienveillant pour faire progresser l'athlète, le staff ou le projet collectif.",
   },
 ];
 
@@ -33,14 +33,14 @@ export const BenefitsSection = () => {
             devenu architecte de la performance multisport.
           </h2>
           <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-            Son approche relie coaching sportif, preparation mentale, strategie
-            de progression et accompagnement humain. Chaque mission demarre par
-            un diagnostic precis, puis un plan d&apos;action clair et mesurable.
+            Son approche relie coaching sportif, préparation mentale, stratégie
+            de progression et accompagnement humain. Chaque mission démarre par
+            un diagnostic précis, puis un plan d&apos;action clair et mesurable.
           </p>
           <p className="leading-relaxed text-muted-foreground">
             Elite Sports Coaching & Conseils combine exigence du haut niveau,
-            transmission terrain et pilotage strategique pour accelerer la
-            performance durable des athletes, clubs et organisations sportives.
+            transmission terrain et pilotage stratégique pour accélérer la
+            performance durable des athlètes, clubs et organisations sportives.
           </p>
         </div>
 

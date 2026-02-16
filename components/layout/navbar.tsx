@@ -22,7 +22,7 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   { href: "#identite", label: "Positionnement" },
   { href: "#presentation", label: "Parcours" },
-  { href: "#methodologie", label: "Methodologie" },
+  { href: "#methodologie", label: "Méthodologie" },
   { href: "#domaines", label: "Interventions" },
   { href: "#valeurs", label: "Valeurs" },
   { href: "#contact", label: "Contact" },
@@ -93,7 +93,7 @@ export const Navbar = () => {
                 </Button>
               ))}
               <Button asChild className="mt-3 rounded-xl py-6" onClick={() => setIsOpen(false)}>
-                <Link href="#contact">Revelons votre potentiel</Link>
+                <Link href="#contact">Révélons votre potentiel</Link>
               </Button>
             </div>
           </SheetContent>

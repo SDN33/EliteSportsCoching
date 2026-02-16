@@ -14,16 +14,16 @@ export const metadata: Metadata = {
     template: "%s | Elite Sports Coaching & Conseils",
   },
   description:
-    "Coaching sportif, conseil strategique multisport et accompagnement de la performance durable pour athletes, clubs et structures de haut niveau.",
+    "Coaching sportif, conseil stratégique multisport et accompagnement de la performance durable pour athlètes, clubs et structures de haut niveau.",
   keywords: [
     "coaching sportif",
     "conseil sportif",
     "performance sportive",
-    "strategie sportive",
-    "preparation mentale",
-    "accompagnement athletes",
+    "stratégie sportive",
+    "préparation mentale",
+    "accompagnement athlètes",
     "accompagnement clubs",
-    "developpement du potentiel",
+    "développement du potentiel",
     "haut niveau",
     "coaching multisport",
   ],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Elite Sports Coaching & Conseils",
     title: "Elite Sports Coaching & Conseils | Coaching Sportif Haut Niveau",
     description:
-      "Expert en performance, strategie sportive, preparation mentale et structuration de projet sportif.",
+      "Expert en performance, stratégie sportive, préparation mentale et structuration de projet sportif.",
     images: [
       {
         url: "/dsc01673.jpg",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: "/Depassement-de-soi.webp",
         width: 1200,
         height: 630,
-        alt: "Depassement de soi - Elite Sports Coaching & Conseils",
+        alt: "Dépassement de soi - Elite Sports Coaching & Conseils",
       },
       {
         url: "/logo.png",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Elite Sports Coaching & Conseils",
     description:
-      "Coaching sportif haut niveau, conseil strategique et accompagnement de la performance.",
+      "Coaching sportif haut niveau, conseil stratégique et accompagnement de la performance.",
     images: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
   },
   robots: {

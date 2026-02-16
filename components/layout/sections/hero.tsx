@@ -119,10 +119,10 @@ export const HeroSection = () => {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(56,189,248,0.2),transparent_45%),radial-gradient(circle_at_80%_12%,rgba(232,200,122,0.16),transparent_38%),linear-gradient(170deg,rgba(255,255,255,0.8),rgba(235,246,255,0.9))] dark:hidden" />
       <div className="absolute inset-0 -z-10 hidden bg-[radial-gradient(circle_at_18%_18%,rgba(46,196,255,0.24),transparent_45%),radial-gradient(circle_at_80%_12%,rgba(232,200,122,0.18),transparent_36%),linear-gradient(170deg,rgba(5,10,17,0.62),rgba(5,8,14,0.82))] dark:block" />
 
-      <div className="container grid items-center gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
+      <div className="container sm:mt-0 md:-mt-16 grid items-center gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
         <div
           data-reveal="left"
-          className="order-2 relative space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8 lg:order-1"
+          className="order-2 relative space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8 lg:order-1 text-center md:text-left"
         >
           <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-primary/45 to-transparent" />
           <Badge
@@ -134,14 +134,14 @@ export const HeroSection = () => {
 
           <div className="space-y-5">
             <h1 className="font-title text-balance-pretty text-3xl font-semibold leading-[1.06] text-slate-900 dark:text-foreground sm:text-4xl md:text-6xl">
-              Coaching sportif premium
+              Coaching Sportif Premium
               <br className="hidden md:block" />
-              & conseil de performance durable
+              & Conseil de Performance
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-slate-700 dark:text-muted-foreground sm:text-lg md:text-xl">
-              Elite Sports Coaching & Conseils accompagne athletes, clubs et
-              structures dans la performance sportive, la strategie de jeu et
-              le developpement du potentiel a long terme.
+              Elite Sports Coaching & Conseils accompagne athlètes, clubs et
+              structures dans la performance sportive, la stratégie de jeu et
+              le développement du potentiel à long terme.
             </p>
           </div>
 
@@ -159,13 +159,13 @@ export const HeroSection = () => {
             ))}
           </ul>
 
-          <div className="flex flex-wrap gap-2.5 pt-1 sm:gap-3">
+          <div className="flex flex-wrap gap-2.5 pt-1 sm:gap-3 justify-center md:justify-start">
             <Button
               asChild
               className="w-full justify-center rounded-full px-5 text-xs font-semibold shadow-lg shadow-primary/25 sm:w-auto sm:px-7 sm:text-sm"
             >
               <Link href="#presentation">
-                Decouvrir notre methode de performance
+                Découvrir notre méthode de performance
                 <ArrowRight className="ml-2 size-4" />
               </Link>
             </Button>
@@ -176,7 +176,7 @@ export const HeroSection = () => {
             >
               <Link href="#contact">
                 <PlayCircle className="mr-2 size-4" />
-                Demarrer un accompagnement strategique
+                Démarrer un accompagnement stratégique
               </Link>
             </Button>
           </div>
@@ -198,7 +198,7 @@ export const HeroSection = () => {
               preload="auto"
               poster="/hero-image-dark.jpeg"
               className="h-[240px] w-full bg-black object-contain sm:h-[320px] lg:h-[430px]"
-              aria-label="Video synchronisee avec le fond hero"
+              aria-label="Vidéo synchronisée avec le fond hero"
             >
               <source src="/videohero.mp4" type="video/mp4" />
             </video>

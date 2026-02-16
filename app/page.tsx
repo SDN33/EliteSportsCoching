@@ -12,14 +12,14 @@ import { TeamSection } from "@/components/layout/sections/team";
 export const metadata: Metadata = {
   title: "Coaching sportif & conseil de performance",
   description:
-    "Elite Sports Coaching & Conseils aide les athletes et clubs a atteindre le haut niveau et a devenir joueur pro: entrainement, strategie, preparation mentale et progression durable.",
+    "Elite Sports Coaching & Conseils aide les athlètes et clubs à atteindre le haut niveau et à devenir joueur pro: entraînement, stratégie, préparation mentale et progression durable.",
   keywords: [
     "comment atteindre le haut niveau",
     "comment devenir joueur pro",
     "devenir joueur professionnel",
     "coaching sportif haut niveau",
-    "preparation mentale sportive",
-    "entrainement haut niveau",
+    "préparation mentale sportive",
+    "entraînement haut niveau",
   ],
   alternates: {
     canonical: "/",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Coaching sportif & conseil de performance",
     description:
-      "Accompagnement de la performance sportive pour athletes, clubs et structures: strategie, mental, methode et progression durable.",
+      "Accompagnement de la performance sportive pour athlètes, clubs et structures: stratégie, mental, méthode et progression durable.",
     url: "/",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: "/Depassement-de-soi.webp",
         width: 1200,
         height: 630,
-        alt: "Depassement de soi - Elite Sports Coaching & Conseils",
+        alt: "Dépassement de soi - Elite Sports Coaching & Conseils",
       },
       {
         url: "/logo.png",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Coaching sportif & conseil de performance",
     description:
-      "Performance sportive, strategie et accompagnement premium pour athletes et clubs.",
+      "Performance sportive, stratégie et accompagnement premium pour athlètes et clubs.",
     images: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
   },
 };
@@ -65,7 +65,7 @@ export default function Home() {
     "@type": "Organization",
     name: "Elite Sports Coaching & Conseils",
     description:
-      "Cabinet de coaching sportif et de conseil strategique pour la performance individuelle et collective.",
+      "Cabinet de coaching sportif et de conseil stratégique pour la performance individuelle et collective.",
     url: "/",
     logo: "/logo.png",
     image: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
@@ -80,11 +80,11 @@ export default function Home() {
     serviceType: [
       "Coaching sportif",
       "Conseil sportif",
-      "Preparation mentale",
+      "Préparation mentale",
       "Structuration de projet sportif",
     ],
     description:
-      "Accompagnement de la performance sportive: strategie, mental, methodologie et progression durable pour athletes et organisations.",
+      "Accompagnement de la performance sportive: stratégie, mental, méthodologie et progression durable pour athlètes et organisations.",
     provider: {
       "@type": "Person",
       name: "Eddy Saint-Cyr",
