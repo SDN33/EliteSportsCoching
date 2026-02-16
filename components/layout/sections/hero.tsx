@@ -122,7 +122,7 @@ export const HeroSection = () => {
       <div className="container grid items-center gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-10">
         <div
           data-reveal="left"
-          className="relative space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8"
+          className="order-2 relative space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8 lg:order-1"
         >
           <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-primary/45 to-transparent" />
           <Badge
@@ -182,7 +182,11 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div data-reveal="right" data-reveal-delay="1" className="relative">
+        <div
+          data-reveal="right"
+          data-reveal-delay="1"
+          className="order-1 relative lg:order-2"
+        >
           <div className="absolute -left-8 -top-8 h-24 w-24 rounded-full bg-primary/20 blur-2xl" />
           <article className="overflow-hidden rounded-[1.9rem] border border-border/70 bg-slate-950/65 shadow-[0_30px_65px_-42px_rgba(6,27,44,0.95)] backdrop-blur-sm">
             <video
