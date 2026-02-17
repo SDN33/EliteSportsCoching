@@ -32,11 +32,11 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-3 z-50 mx-auto mt-2 flex w-[95%] max-w-screen-2xl items-center justify-between rounded-2xl border border-border/70 bg-background/75 px-3 py-2 shadow-[0_12px_40px_-22px_rgba(8,22,46,0.55)] backdrop-blur-xl sm:px-5 lg:px-6">
+    <header className="sticky top-3 z-50 mx-auto mt-2 flex w-[calc(100dvw-1rem)] max-w-[calc(100dvw-1rem)] items-center justify-between rounded-2xl border border-border/70 bg-background/75 px-2.5 py-2 shadow-[0_12px_40px_-22px_rgba(8,22,46,0.55)] backdrop-blur-xl sm:w-[95%] sm:max-w-screen-2xl sm:px-5 lg:px-6">
       <Link href="#" className="inline-flex items-center">
         <BrandLogo
           crop
-          className="h-12 w-[142px] sm:h-14 sm:w-[220px]"
+          className="h-11 w-[126px] min-[360px]:w-[142px] sm:h-14 sm:w-[220px]"
           priority
         />
       </Link>

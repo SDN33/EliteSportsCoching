@@ -180,6 +180,19 @@ html {
     justify-content: center;
   }
 
+  #hero .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero .container > * {
+    min-width: 0;
+  }
+
   #contact .surface-soft > div {
     justify-content: center;
   }

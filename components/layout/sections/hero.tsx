@@ -119,15 +119,15 @@ export const HeroSection = () => {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(56,189,248,0.2),transparent_45%),radial-gradient(circle_at_80%_12%,rgba(232,200,122,0.16),transparent_38%),linear-gradient(170deg,rgba(255,255,255,0.8),rgba(235,246,255,0.9))] dark:hidden" />
       <div className="absolute inset-0 -z-10 hidden bg-[radial-gradient(circle_at_18%_18%,rgba(46,196,255,0.24),transparent_45%),radial-gradient(circle_at_80%_12%,rgba(232,200,122,0.18),transparent_36%),linear-gradient(170deg,rgba(5,10,17,0.62),rgba(5,8,14,0.82))] dark:block" />
 
-      <div className="container mt-0 grid items-center justify-items-center gap-6 md:-mt-16 lg:grid-cols-[1.08fr_0.92fr] lg:justify-items-stretch lg:gap-10">
+      <div className="container mt-0 grid w-full items-center justify-items-center gap-6 md:-mt-16 lg:grid-cols-[1.08fr_0.92fr] lg:justify-items-stretch lg:gap-10">
         <div
           data-reveal="left"
-          className="order-2 relative w-full space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 text-center shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8 md:text-left lg:order-1"
+          className="order-2 relative w-full min-w-0 space-y-6 rounded-[1.9rem] border border-slate-200/80 bg-white/78 p-5 text-center shadow-[0_25px_60px_-40px_rgba(43,143,194,0.7)] backdrop-blur-md dark:border-border/60 dark:bg-card/45 dark:shadow-[0_25px_60px_-40px_rgba(24,110,162,0.55)] sm:p-6 md:space-y-8 md:p-8 md:text-left lg:order-1"
         >
           <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-primary/45 to-transparent" />
           <Badge
             variant="outline"
-            className="border-primary/55 bg-white/80 px-4 py-1 text-xs uppercase tracking-[0.2em] text-slate-700 dark:bg-background/35 dark:text-slate-100"
+            className="mx-auto max-w-full whitespace-normal border-primary/55 bg-white/80 px-4 py-1 text-center text-xs uppercase tracking-[0.2em] text-slate-700 dark:bg-background/35 dark:text-slate-100 md:mx-0 md:text-left"
           >
             Conseiller sportif multisport
           </Badge>
@@ -138,20 +138,20 @@ export const HeroSection = () => {
               <br className="hidden md:block" />
               & Conseil de Performance
             </h1>
-            <p className="max-w-2xl text-base leading-relaxed text-slate-700 dark:text-muted-foreground sm:text-lg md:text-xl">
+            <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-700 dark:text-muted-foreground sm:text-lg md:mx-0 md:text-xl">
               Elite Sports Coaching & Conseils accompagne athlètes, clubs et
               structures dans la performance sportive, la stratégie de jeu et
               le développement du potentiel à long terme.
             </p>
           </div>
 
-          <ul className="grid gap-2.5 text-[11px] sm:grid-cols-2 sm:gap-3 sm:text-xs">
+          <ul className="mx-auto grid w-full max-w-[34rem] gap-2.5 text-[11px] sm:grid-cols-2 sm:gap-3 sm:text-xs md:mx-0 md:max-w-none">
             {sloganList.map((slogan, index) => (
               <li
                 key={slogan}
                 data-reveal
                 data-reveal-delay={(index + 1).toString()}
-                className="group flex items-center gap-3 rounded-xl border border-border/50 bg-background/65 px-3 py-2 text-xs uppercase tracking-[0.13em] text-slate-800 dark:bg-background/35 dark:text-foreground/90"
+                className="group flex items-center justify-center gap-3 rounded-xl border border-border/50 bg-background/65 px-3 py-2 text-center text-xs uppercase tracking-[0.13em] text-slate-800 dark:bg-background/35 dark:text-foreground/90 md:justify-start md:text-left"
               >
                 <span className="h-px w-8 bg-gradient-to-r from-primary to-[#e8c87a] transition-all duration-300 group-hover:w-12" />
                 {slogan}
@@ -162,7 +162,7 @@ export const HeroSection = () => {
           <div className="flex flex-wrap gap-2.5 pt-1 sm:gap-3 justify-center md:justify-start">
             <Button
               asChild
-              className="w-full justify-center rounded-full px-5 text-xs font-semibold shadow-lg shadow-primary/25 sm:w-auto sm:px-7 sm:text-sm"
+              className="h-auto w-full justify-center whitespace-normal rounded-full px-5 py-3 text-xs font-semibold leading-tight shadow-lg shadow-primary/25 sm:h-10 sm:w-auto sm:whitespace-nowrap sm:px-7 sm:py-2 sm:text-sm"
             >
               <Link href="#presentation">
                 Découvrir notre méthode de performance
@@ -172,7 +172,7 @@ export const HeroSection = () => {
             <Button
               asChild
               variant="secondary"
-              className="w-full justify-center rounded-full border border-border/60 bg-white/80 px-5 text-xs shadow-sm dark:bg-background/45 sm:w-auto sm:px-7 sm:text-sm"
+              className="h-auto w-full justify-center whitespace-normal rounded-full border border-border/60 bg-white/80 px-5 py-3 text-xs leading-tight shadow-sm dark:bg-background/45 sm:h-10 sm:w-auto sm:whitespace-nowrap sm:px-7 sm:py-2 sm:text-sm"
             >
               <Link href="#contact">
                 <PlayCircle className="mr-2 size-4" />
@@ -185,10 +185,10 @@ export const HeroSection = () => {
         <div
           data-reveal="right"
           data-reveal-delay="1"
-          className="order-1 relative w-full max-w-[42rem] lg:order-2 lg:max-w-none"
+          className="order-1 relative w-full min-w-0 max-w-[42rem] lg:order-2 lg:max-w-none"
         >
           <div className="absolute -left-8 -top-8 hidden h-24 w-24 rounded-full bg-primary/20 blur-2xl sm:block" />
-          <article className="mx-auto w-full overflow-hidden rounded-[1.9rem] border border-border/70 bg-slate-950/65 shadow-[0_30px_65px_-42px_rgba(6,27,44,0.95)] backdrop-blur-sm">
+          <article className="mx-auto w-full max-w-full overflow-hidden rounded-[1.9rem] border border-border/70 bg-slate-950/65 shadow-[0_30px_65px_-42px_rgba(6,27,44,0.95)] backdrop-blur-sm">
             <video
               ref={cardVideoRef}
               autoPlay
