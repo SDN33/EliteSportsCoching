@@ -7,13 +7,13 @@ export const SponsorsSection = () => {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_14%_10%,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_86%_0%,rgba(232,200,122,0.16),transparent_30%)]" />
 
         <div className="relative mb-8 text-center md:mb-10">
-          <p className="section-kicker">Positionnement</p>
-          <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
+          <p data-reveal className="section-kicker">Positionnement</p>
+          <h2 data-reveal data-reveal-delay="1" className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
             Conseiller Sportif Multisport
             <br className="hidden md:block" />
             & Accompagnement Global de Carrière
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
+          <p data-reveal data-reveal-delay="2" className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
             Elite Sports Conseils se positionne sur l&apos;accompagnement global
             des athlètes: conseil sportif pur, gestion de carrière et soutien
             dans la vie personnelle et professionnelle.

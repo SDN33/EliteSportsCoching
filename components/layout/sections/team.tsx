@@ -44,9 +44,9 @@ const valuePillars = [
 export const TeamSection = () => {
   return (
     <section id="valeurs" className="container py-16 md:py-24">
-      <div data-reveal className="mb-10 text-center md:mb-12">
-        <p className="section-kicker">Nos valeurs</p>
-        <h2 className="font-title text-3xl font-semibold md:text-5xl">
+      <div className="mb-10 text-center md:mb-12">
+        <p data-reveal className="section-kicker">Nos valeurs</p>
+        <h2 data-reveal data-reveal-delay="1" className="font-title text-3xl font-semibold md:text-5xl">
           Des valeurs fortes pour
           <br className="hidden md:block" />
           un accompagnement de carrière durable.

@@ -42,9 +42,9 @@ const methodSteps = [
 export const FeaturesSection = () => {
   return (
     <section id="methodologie" className="container py-16 md:py-24">
-      <div data-reveal className="mb-10 text-center md:mb-12">
-        <p className="section-kicker">Méthode de performance</p>
-        <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
+      <div className="mb-10 text-center md:mb-12">
+        <p data-reveal className="section-kicker">Méthode de performance</p>
+        <h2 data-reveal data-reveal-delay="1" className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
           Une méthodologie d&apos;accompagnement
           <br className="hidden md:block" />
           orientée résultats et progression durable.
