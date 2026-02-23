@@ -16,9 +16,9 @@ const serviceList = [
 export const ServicesSection = () => {
   return (
     <section id="domaines" className="container py-16 md:py-24">
-      <div data-reveal className="mb-10 text-center md:mb-12">
-        <p className="section-kicker">Offres & expertises</p>
-        <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
+      <div className="mb-10 text-center md:mb-12">
+        <p data-reveal className="section-kicker">Offres & expertises</p>
+        <h2 data-reveal data-reveal-delay="1" className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
           Un accompagnement global,
           <br className="hidden md:block" />
           sur et en dehors du terrain.

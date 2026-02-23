@@ -17,13 +17,13 @@ export const CommunitySection = () => {
         <div className="pointer-events-none absolute -bottom-16 right-0 h-44 w-44 rounded-full bg-accent/15 blur-3xl" />
 
         <div className="relative">
-          <p className="section-kicker">Accompagnement global</p>
-          <h2 className="font-title text-balance-pretty text-3xl font-semibold text-slate-50 md:text-5xl">
+          <p data-reveal className="section-kicker">Accompagnement global</p>
+          <h2 data-reveal data-reveal-delay="1" className="font-title text-balance-pretty text-3xl font-semibold text-slate-50 md:text-5xl">
             Un soutien complet,
             <br className="hidden md:block" />
             sur et en dehors du terrain.
           </h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-slate-300">
+          <p data-reveal data-reveal-delay="2" className="mt-4 max-w-3xl leading-relaxed text-slate-300">
             Au-delà du conseil sportif, Elite Sports Conseils accompagne les
             athlètes dans tous les aspects de leur vie: logement, investissement,
             conciergerie premium, et médiation en cas de conflit avec un agent.
