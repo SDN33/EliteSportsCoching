@@ -129,12 +129,12 @@ export const HeroSection = () => {
             variant="outline"
             className="mx-auto max-w-full whitespace-normal border-primary/55 bg-white/80 px-4 py-1 text-center text-xs uppercase tracking-[0.2em] text-slate-700 dark:bg-background/35 dark:text-slate-100 md:mx-0 md:text-left"
           >
-            Conseiller sportif
+            Conseiller sportif multisport
           </Badge>
 
           <div className="space-y-5">
             <h1 className="font-title text-balance-pretty text-3xl font-semibold leading-[1.06] text-slate-900 dark:text-foreground sm:text-4xl md:text-6xl">
-              Conseiller Sportif Multisport
+              Conseiller Sportif
               <br className="hidden md:block" />
               & Gestion de Carrière
             </h1>
