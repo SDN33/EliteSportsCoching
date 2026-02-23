@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { BrandLogo } from "@/components/layout/brand-logo";
+import InstagramIcon from "@/components/icons/instagram-icon";
+import FacebookIcon from "@/components/icons/facebook-icon";
 
 const links = [
   { href: "#presentation", label: "Présentation" },
@@ -34,7 +36,27 @@ export const FooterSection = () => {
           </nav>
         </div>
 
-        <div className="relative mt-4 border-t border-border/70 pt-3 text-xs text-muted-foreground">
+        <div className="relative mt-4 flex items-center gap-3 border-t border-border/70 pt-3">
+          <span className="text-xs text-muted-foreground">Suivez-nous&nbsp;:</span>
+          <button
+            disabled
+            title="Instagram – lien bientôt disponible"
+            aria-label="Instagram"
+            className="flex h-8 w-8 cursor-default items-center justify-center rounded-full border border-border/70 bg-background/70 opacity-50"
+          >
+            <InstagramIcon width="16px" height="16px" />
+          </button>
+          <button
+            disabled
+            title="Facebook – lien bientôt disponible"
+            aria-label="Facebook"
+            className="flex h-8 w-8 cursor-default items-center justify-center rounded-full border border-border/70 bg-background/70 opacity-50"
+          >
+            <FacebookIcon width="16px" height="16px" />
+          </button>
+        </div>
+
+        <div className="relative mt-3 border-t border-border/70 pt-3 text-xs text-muted-foreground">
           {`© ${new Date().getFullYear()} Elite Sports Conseils. Tous droits réservés. - Site propulsé par `}
           <a href="https://stillinov.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             Still-inov Agency
