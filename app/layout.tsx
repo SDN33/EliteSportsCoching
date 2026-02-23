@@ -39,6 +39,12 @@ export const metadata: Metadata = {
       "Conseiller sportif multisport, gestion de carrière et accompagnement global pour athlètes: sur et en dehors du terrain.",
     images: [
       {
+        url: "/logo.png",
+        width: 2000,
+        height: 2000,
+        alt: "Logo Elite Sports Conseils",
+      },
+      {
         url: "/dsc01673.jpg",
         width: 1280,
         height: 853,
@@ -50,12 +56,6 @@ export const metadata: Metadata = {
         height: 630,
         alt: "Dépassement de soi - Elite Sports Conseils",
       },
-      {
-        url: "/logo.png",
-        width: 2000,
-        height: 2000,
-        alt: "Logo Elite Sports Conseils",
-      },
     ],
   },
   twitter: {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Elite Sports Conseils",
     description:
       "Conseiller sportif multisport, gestion de carrière et accompagnement global sur et en dehors du terrain.",
-    images: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
+    images: ["/logo.png", "/dsc01673.jpg", "/Depassement-de-soi.webp"],
   },
   robots: {
     index: true,
