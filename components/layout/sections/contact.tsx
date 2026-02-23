@@ -54,7 +54,7 @@ export const ContactSection = () => {
       values.message,
     ].join("%0D%0A");
 
-    window.location.href = `mailto:contact@elitesportscoching.com?subject=Demande%20d'accompagnement%20Elite%20Sports%20Coaching%20%26%20Conseils%20Premium&body=${body}`;
+    window.location.href = `mailto:contact@elitesportscoching.com?subject=Demande%20d'accompagnement%20Elite%20Sports%20Conseils&body=${body}`;
   };
 
   return (
@@ -64,14 +64,14 @@ export const ContactSection = () => {
           <div>
             <p className="section-kicker">Demande d&apos;accompagnement</p>
             <h2 className="mt-2 font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
-              Construisons votre trajectoire sportive.
+              Construisons votre trajectoire de carrière.
               <br className="hidden md:block" />
-              Structurons votre performance durable.
+              Un accompagnement sur mesure.
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Premier échange stratégique pour analyser vos objectifs, vos
-              contraintes et votre contexte de compétition, puis définir une
-              feuille de route performante et réaliste.
+              Premier échange pour analyser votre situation, vos objectifs et
+              vos besoins: conseil sportif, gestion de carrière, logement,
+              investissement ou médiation. Définissons ensemble un plan d&apos;action concret.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export const ContactSection = () => {
                 Format d&apos;accompagnement
               </div>
               <p className="text-sm text-muted-foreground">
-                Athlètes, clubs, staffs, centres de formation
+                Athlètes, joueurs professionnels, sportifs de haut niveau
               </p>
             </article>
             <article data-reveal data-reveal-delay="4" className="surface-soft p-4">
@@ -172,9 +172,9 @@ export const ContactSection = () => {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="Athlète individuel">Athlète individuel</SelectItem>
-                          <SelectItem value="Club ou staff">Club ou staff</SelectItem>
+                          <SelectItem value="Joueur professionnel">Joueur professionnel</SelectItem>
                           <SelectItem value="Jeune talent">Jeune talent</SelectItem>
-                          <SelectItem value="Structure sportive">Structure sportive</SelectItem>
+                          <SelectItem value="Sportif en reconversion">Sportif en reconversion</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -190,7 +190,7 @@ export const ContactSection = () => {
                       <FormLabel>Objectif prioritaire</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="Ex: structurer une progression sur 6 mois"
+                          placeholder="Ex: gérer ma carrière et trouver un logement"
                           className="h-11 rounded-xl bg-background/75"
                           {...field}
                         />
@@ -220,7 +220,7 @@ export const ContactSection = () => {
                 />
 
                 <Button type="submit" className="rounded-full py-6 text-sm font-semibold">
-                  Révélons votre potentiel
+                  Démarrer mon accompagnement
                 </Button>
               </form>
             </Form>

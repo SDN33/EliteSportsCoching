@@ -45,7 +45,7 @@ export const FeaturesSection = () => {
       <div data-reveal className="mb-10 text-center md:mb-12">
         <p className="section-kicker">Méthode de performance</p>
         <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
-          Une méthodologie sportive
+          Une méthodologie d&apos;accompagnement
           <br className="hidden md:block" />
           orientée résultats et progression durable.
         </h2>

@@ -7,8 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 const sloganList = [
-  "Comment atteindre le haut niveau",
-  "Comment devenir joueur pro",
+  "Gestion de carrière des joueurs",
+  "Accompagnement sur et hors du terrain",
 ];
 
 export const HeroSection = () => {
@@ -134,14 +134,14 @@ export const HeroSection = () => {
 
           <div className="space-y-5">
             <h1 className="font-title text-balance-pretty text-3xl font-semibold leading-[1.06] text-slate-900 dark:text-foreground sm:text-4xl md:text-6xl">
-              Coaching Sportif Premium
+              Conseiller Sportif Multisport
               <br className="hidden md:block" />
-              & Conseil de Performance
+              & Gestion de Carrière
             </h1>
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-700 dark:text-muted-foreground sm:text-lg md:mx-0 md:text-xl">
-              Elite Sports Coaching & Conseils accompagne athlètes, clubs et
-              structures dans la performance sportive, la stratégie de jeu et
-              le développement du potentiel à long terme.
+              Elite Sports Conseils accompagne les athlètes dans la gestion de
+              leur carrière et leur vie personnelle: conseil sportif, logement,
+              investissement, conciergerie et médiation.
             </p>
           </div>
 
@@ -165,7 +165,7 @@ export const HeroSection = () => {
               className="h-auto w-full justify-center whitespace-normal rounded-full px-5 py-3 text-xs font-semibold leading-tight shadow-lg shadow-primary/25 sm:h-10 sm:w-auto sm:whitespace-nowrap sm:px-7 sm:py-2 sm:text-sm"
             >
               <Link href="#presentation">
-                Découvrir notre méthode de performance
+                Découvrir notre approche d&apos;accompagnement
                 <ArrowRight className="ml-2 size-4" />
               </Link>
             </Button>
@@ -176,7 +176,7 @@ export const HeroSection = () => {
             >
               <Link href="#contact">
                 <PlayCircle className="mr-2 size-4" />
-                Démarrer un accompagnement stratégique
+                Démarrer un accompagnement global
               </Link>
             </Button>
           </div>

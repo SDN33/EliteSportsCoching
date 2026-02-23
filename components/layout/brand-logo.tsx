@@ -20,7 +20,7 @@ export const BrandLogo = ({
     <span className={cn("inline-flex items-center", crop && "overflow-hidden", className)}>
       <Image
         src="/logolight.png"
-        alt="Elite Sports Coaching & Conseils"
+        alt="Elite Sports Conseils"
         width={460}
         height={146}
         priority={priority}
@@ -28,7 +28,7 @@ export const BrandLogo = ({
       />
       <Image
         src="/logo.png"
-        alt="Elite Sports Coaching & Conseils"
+        alt="Elite Sports Conseils"
         width={460}
         height={146}
         priority={priority}

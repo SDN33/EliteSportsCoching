@@ -9,15 +9,15 @@ const pillars = [
   },
   {
     icon: Target,
-    title: "Vision stratégique",
+    title: "Conseil sportif pur",
     description:
-      "Des plans d'action structurés pour transformer des objectifs ambitieux en trajectoires mesurables.",
+      "Des plans d'action structurés pour guider la carrière sportive et les décisions clés à chaque étape.",
   },
   {
     icon: Users2,
-    title: "Accompagnement humain",
+    title: "Accompagnement humain global",
     description:
-      "Un cadre exigeant et bienveillant pour faire progresser l'athlète, le staff ou le projet collectif.",
+      "Un soutien concret sur et en dehors du terrain: logement, investissement, gestion de carrière et vie personnelle.",
   },
 ];
 
@@ -33,14 +33,14 @@ export const BenefitsSection = () => {
             devenu architecte de la performance multisport.
           </h2>
           <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-            Son approche relie coaching sportif, préparation mentale, stratégie
-            de progression et accompagnement humain. Chaque mission démarre par
+            Son approche relie conseil sportif, préparation mentale, gestion de
+            carrière et accompagnement humain global. Chaque mission démarre par
             un diagnostic précis, puis un plan d&apos;action clair et mesurable.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            Elite Sports Coaching & Conseils combine exigence du haut niveau,
-            transmission terrain et pilotage stratégique pour accélérer la
-            performance durable des athlètes, clubs et organisations sportives.
+            Elite Sports Conseils combine exigence du haut niveau, transmission
+            terrain et accompagnement global pour accélérer la réussite sportive
+            et personnelle des athlètes.
           </p>
         </div>
 

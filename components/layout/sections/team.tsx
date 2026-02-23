@@ -9,7 +9,7 @@ const values = [
   "Bienveillance",
   "Transmission",
   "Engagement",
-  "Vision long terme",
+  "Gestion de carrière",
   "Excellence",
 ];
 
@@ -27,7 +27,7 @@ const valuePillars = [
   {
     icon: HeartHandshake,
     title: "Relation de confiance",
-    text: "Une approche humaine et engagée pour faire émerger un potentiel durable.",
+    text: "Une approche humaine et engagée pour soutenir l'athlète dans sa carrière et sa vie personnelle.",
   },
   {
     icon: Lightbulb,
@@ -45,11 +45,11 @@ export const TeamSection = () => {
   return (
     <section id="valeurs" className="container py-16 md:py-24">
       <div data-reveal className="mb-10 text-center md:mb-12">
-        <p className="section-kicker">ADN de l&apos;accompagnement</p>
+        <p className="section-kicker">Nos valeurs</p>
         <h2 className="font-title text-3xl font-semibold md:text-5xl">
           Des valeurs fortes pour
           <br className="hidden md:block" />
-          une performance sportive durable.
+          un accompagnement de carrière durable.
         </h2>
       </div>
 

@@ -1,9 +1,9 @@
 const markers = [
-  "Lecture du jeu et intelligence collective",
-  "Culture de centre de formation et progression individuelle",
-  "Décision sous pression et adaptation tactique",
-  "Leadership terrain et cohésion de groupe",
-  "Vision à long terme de la performance",
+  "Accompagnement logement et installation",
+  "Conseil en investissement et gestion patrimoniale",
+  "Service de conciergerie et chauffeur privé",
+  "Médiation en cas de rupture avec un agent",
+  "Soutien dans la vie personnelle et familiale",
 ];
 
 export const CommunitySection = () => {
@@ -17,17 +17,17 @@ export const CommunitySection = () => {
         <div className="pointer-events-none absolute -bottom-16 right-0 h-44 w-44 rounded-full bg-accent/15 blur-3xl" />
 
         <div className="relative">
-          <p className="section-kicker">Culture de performance</p>
+          <p className="section-kicker">Accompagnement global</p>
           <h2 className="font-title text-balance-pretty text-3xl font-semibold text-slate-50 md:text-5xl">
-            L&apos;ADN du football moderne
+            Un soutien complet,
             <br className="hidden md:block" />
-            au service d&apos;une vision multisport.
+            sur et en dehors du terrain.
           </h2>
           <p className="mt-4 max-w-3xl leading-relaxed text-slate-300">
-            Sans enfermer l&apos;accompagnement dans une seule discipline, Elite
-            Sports Coaching & Conseils mobilise les codes du football de haut
-            niveau: intelligence collective, vision tactique, lecture du jeu et
-            maîtrise des moments décisifs.
+            Au-delà du conseil sportif, Elite Sports Conseils accompagne les
+            athlètes dans tous les aspects de leur vie: logement, investissement,
+            conciergerie premium, et médiation en cas de conflit avec un agent.
+            Une présence totale pour que vous puissiez vous concentrer sur votre performance.
           </p>
 
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

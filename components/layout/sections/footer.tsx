@@ -22,9 +22,8 @@ export const FooterSection = () => {
           <div>
             <BrandLogo className="w-[220px]" />
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Coaching sportif, conseil stratégique et accompagnement de la
-              performance pour athlètes, clubs et structures engagées vers le
-              haut niveau.
+              Conseil sportif, gestion de carrière et accompagnement global pour
+              athlètes: sur et en dehors du terrain, logement, investissement et conciergerie.
             </p>
           </div>
 
@@ -42,7 +41,7 @@ export const FooterSection = () => {
         </div>
 
         <div className="relative mt-8 border-t border-border/70 pt-5 text-xs text-muted-foreground">
-          {`© ${new Date().getFullYear()} Elite Sports Coaching & Conseils. Tous droits réservés. - Site propulsé par `}
+          {`© ${new Date().getFullYear()} Elite Sports Conseils. Tous droits réservés. - Site propulsé par `}
           <a href="https://stillinov.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             Still-inov Agency
           </a>

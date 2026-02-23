@@ -57,7 +57,7 @@ export const Navbar = () => {
       <div className="hidden items-center gap-2 lg:flex">
         <ToggleTheme className="border border-border/60 bg-background/65" />
         <Button asChild size="sm" className="rounded-full px-6 font-semibold">
-          <Link href="#contact">Coaching & Conseils premium</Link>
+          <Link href="#contact">Conseil Sportif Premium</Link>
         </Button>
       </div>
 
@@ -93,7 +93,7 @@ export const Navbar = () => {
                 </Button>
               ))}
               <Button asChild className="mt-3 rounded-xl py-6" onClick={() => setIsOpen(false)}>
-                <Link href="#contact">Révélons votre potentiel</Link>
+                <Link href="#contact">Démarrer mon accompagnement</Link>
               </Button>
             </div>
           </SheetContent>
