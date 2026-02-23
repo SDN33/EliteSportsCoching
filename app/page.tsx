@@ -10,51 +10,51 @@ import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 
 export const metadata: Metadata = {
-  title: "Coaching sportif & conseil de performance",
+  title: "Conseil sportif & accompagnement de carrière",
   description:
-    "Elite Sports Coaching & Conseils aide les athlètes et clubs à atteindre le haut niveau et à devenir joueur pro: entraînement, stratégie, préparation mentale et progression durable.",
+    "Elite Sports Conseils accompagne les athlètes dans la gestion de leur carrière et leur vie personnelle: conseil sportif, logement, investissement, conciergerie et médiation.",
   keywords: [
-    "comment atteindre le haut niveau",
-    "comment devenir joueur pro",
-    "devenir joueur professionnel",
-    "coaching sportif haut niveau",
-    "préparation mentale sportive",
-    "entraînement haut niveau",
+    "gestion de carrière sportive",
+    "conseiller sportif multisport",
+    "accompagnement athlètes",
+    "conciergerie sportive",
+    "aide logement joueur",
+    "conseil investissement sportif",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Coaching sportif & conseil de performance",
+    title: "Conseil sportif & accompagnement de carrière",
     description:
-      "Accompagnement de la performance sportive pour athlètes, clubs et structures: stratégie, mental, méthode et progression durable.",
+      "Accompagnement global pour athlètes: gestion de carrière, conseil sportif, logement, investissement et conciergerie premium.",
     url: "/",
     images: [
       {
         url: "/dsc01673.jpg",
         width: 1280,
         height: 853,
-        alt: "Elite Sports Coaching & Conseils",
+        alt: "Elite Sports Conseils",
       },
       {
         url: "/Depassement-de-soi.webp",
         width: 1200,
         height: 630,
-        alt: "Dépassement de soi - Elite Sports Coaching & Conseils",
+        alt: "Dépassement de soi - Elite Sports Conseils",
       },
       {
         url: "/logo.png",
         width: 2000,
         height: 2000,
-        alt: "Logo Elite Sports Coaching & Conseils",
+        alt: "Logo Elite Sports Conseils",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coaching sportif & conseil de performance",
+    title: "Conseil sportif & accompagnement de carrière",
     description:
-      "Performance sportive, stratégie et accompagnement premium pour athlètes et clubs.",
+      "Conseil sportif, gestion de carrière et accompagnement global pour athlètes.",
     images: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
   },
 };
@@ -63,9 +63,9 @@ export default function Home() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Elite Sports Coaching & Conseils",
+    name: "Elite Sports Conseils",
     description:
-      "Cabinet de coaching sportif et de conseil stratégique pour la performance individuelle et collective.",
+      "Cabinet de conseil sportif et d'accompagnement global pour la gestion de carrière des athlètes: sur et en dehors du terrain.",
     url: "/",
     logo: "/logo.png",
     image: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
@@ -75,16 +75,18 @@ export default function Home() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Elite Sports Coaching & Conseils",
+    name: "Elite Sports Conseils",
     areaServed: "France",
     serviceType: [
-      "Coaching sportif",
       "Conseil sportif",
-      "Préparation mentale",
-      "Structuration de projet sportif",
+      "Gestion de carrière des joueurs",
+      "Conciergerie sportive",
+      "Aide au logement",
+      "Conseil en investissement",
+      "Médiation avec les agents",
     ],
     description:
-      "Accompagnement de la performance sportive: stratégie, mental, méthodologie et progression durable pour athlètes et organisations.",
+      "Accompagnement global pour athlètes: gestion de carrière, conseil sportif multisport, conciergerie, logement, investissement et médiation.",
     provider: {
       "@type": "Person",
       name: "Eddy Saint-Cyr",

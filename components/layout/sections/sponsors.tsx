@@ -9,14 +9,14 @@ export const SponsorsSection = () => {
         <div className="relative mb-8 text-center md:mb-10">
           <p className="section-kicker">Positionnement</p>
           <h2 className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
-            Conseiller sportif
+            Conseiller Sportif Multisport
             <br className="hidden md:block" />
-            & Conseil Stratégique pour la Performance
+            & Accompagnement Global de Carrière
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
-            Elite Sports Coaching & Conseils se positionne sur l&apos;accompagnement
-            de la performance individuelle et collective: athlètes, clubs,
-            staffs et projets sportifs de haut niveau.
+            Elite Sports Conseils se positionne sur l&apos;accompagnement global
+            des athlètes: conseil sportif pur, gestion de carrière et soutien
+            dans la vie personnelle et professionnelle.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export const SponsorsSection = () => {
           <div className="flex min-h-[230px] items-center justify-center rounded-2xl border border-border/40 bg-gradient-to-b from-white to-slate-100 p-6 dark:from-slate-950 dark:to-black sm:min-h-[310px] md:min-h-[360px]">
               <Image
                 src="/dsc01673.jpg"
-                alt="Elite Sports Coaching & Conseils"
+                alt="Elite Sports Conseils"
                 width={780}
                 height={280}
                 priority
