@@ -14,7 +14,7 @@ export const SponsorsSection = () => {
             & Accompagnement Global de Carrière
           </h2>
           <p data-reveal data-reveal-delay="2" className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
-            Elite Sports Conseils se positionne sur l&apos;accompagnement global
+            Sport Synergie Consulting se positionne sur l&apos;accompagnement global
             des athlètes: conseil sportif pur, gestion de carrière et soutien
             dans la vie personnelle et professionnelle.
           </p>
@@ -28,7 +28,7 @@ export const SponsorsSection = () => {
           <div className="flex min-h-[230px] items-center justify-center rounded-2xl border border-border/40 bg-gradient-to-b from-white to-slate-100 p-6 dark:from-slate-950 dark:to-black sm:min-h-[310px] md:min-h-[360px]">
               <Image
                 src="/dsc01673.jpg"
-                alt="Elite Sports Conseils"
+                alt="Sport Synergie Consulting"
                 width={780}
                 height={280}
                 priority

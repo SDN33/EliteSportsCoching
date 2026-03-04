@@ -57,7 +57,7 @@ export const FooterSection = () => {
         </div>
 
         <div className="relative mt-3 border-t border-border/70 pt-3 text-xs text-muted-foreground">
-          {`© ${new Date().getFullYear()} Elite Sports Conseils. Tous droits réservés. - Site propulsé par `}
+          {`© ${new Date().getFullYear()} Sport Synergie Consulting. Tous droits réservés. - Site propulsé par `}
           <a href="https://stillinov.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             Still-inov Agency
           </a>

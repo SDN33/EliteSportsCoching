@@ -24,7 +24,7 @@ export const CommunitySection = () => {
             sur et en dehors du terrain.
           </h2>
           <p data-reveal data-reveal-delay="2" className="mt-4 max-w-3xl leading-relaxed text-slate-300">
-            Au-delà du conseil sportif, Elite Sports Conseils accompagne les
+            Au-delà du conseil sportif, Sport Synergie Consulting accompagne les
             athlètes dans tous les aspects de leur vie: logement, investissement,
             conciergerie premium, et médiation en cas de conflit avec un agent.
             Une présence totale pour que vous puissiez vous concentrer sur votre performance.
