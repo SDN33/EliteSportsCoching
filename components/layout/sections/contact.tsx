@@ -54,7 +54,7 @@ export const ContactSection = () => {
       values.message,
     ].join("%0D%0A");
 
-    window.location.href = `mailto:contact@elitesportscoching.com?subject=Demande%20d'accompagnement%20Elite%20Sports%20Conseils&body=${body}`;
+    window.location.href = `mailto:contact@elitesportscoching.com?subject=Demande%20d'accompagnement%20Sport%20Synergie%20Consulting&body=${body}`;
   };
 
   return (

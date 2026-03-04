@@ -38,7 +38,7 @@ export const BenefitsSection = () => {
             un diagnostic précis, puis un plan d&apos;action clair et mesurable.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            Elite Sports Conseils combine exigence du haut niveau, transmission
+            Sport Synergie Consulting combine exigence du haut niveau, transmission
             terrain et accompagnement global pour accélérer la réussite sportive
             et personnelle des athlètes.
           </p>

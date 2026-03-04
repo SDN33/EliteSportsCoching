@@ -10,8 +10,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Elite Sports Conseils | Conseiller Sportif Multisport",
-    template: "%s | Elite Sports Conseils",
+    default: "Sport Synergie Consulting | Conseiller Sportif Multisport",
+    template: "%s | Sport Synergie Consulting",
   },
   description:
     "Conseiller sportif multisport, gestion de carrière des joueurs et accompagnement global: sur et en dehors du terrain, logement, investissement, conciergerie et médiation.",
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     "haut niveau",
     "conseiller sportif multisport",
   ],
-  applicationName: "Elite Sports Conseils",
+  applicationName: "Sport Synergie Consulting",
   authors: [{ name: "Eddy Saint-Cyr" }],
   creator: "Eddy Saint-Cyr",
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    siteName: "Elite Sports Conseils",
-    title: "Elite Sports Conseils | Conseiller Sportif Multisport",
+    siteName: "Sport Synergie Consulting",
+    title: "Sport Synergie Consulting | Conseiller Sportif Multisport",
     description:
       "Conseiller sportif multisport, gestion de carrière et accompagnement global pour athlètes: sur et en dehors du terrain.",
     images: [
@@ -42,25 +42,25 @@ export const metadata: Metadata = {
         url: "/logo.png",
         width: 2000,
         height: 2000,
-        alt: "Logo Elite Sports Conseils",
+        alt: "Logo Sport Synergie Consulting",
       },
       {
         url: "/dsc01673.jpg",
         width: 1280,
         height: 853,
-        alt: "Elite Sports Conseils - conseiller sportif et accompagnement de carrière",
+        alt: "Sport Synergie Consulting - conseiller sportif et accompagnement de carrière",
       },
       {
         url: "/Depassement-de-soi.webp",
         width: 1200,
         height: 630,
-        alt: "Dépassement de soi - Elite Sports Conseils",
+        alt: "Dépassement de soi - Sport Synergie Consulting",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite Sports Conseils",
+    title: "Sport Synergie Consulting",
     description:
       "Conseiller sportif multisport, gestion de carrière et accompagnement global sur et en dehors du terrain.",
     images: ["/logo.png", "/dsc01673.jpg", "/Depassement-de-soi.webp"],

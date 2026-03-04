@@ -12,7 +12,7 @@ import { TeamSection } from "@/components/layout/sections/team";
 export const metadata: Metadata = {
   title: "Conseil sportif & accompagnement de carrière",
   description:
-    "Elite Sports Conseils accompagne les athlètes dans la gestion de leur carrière et leur vie personnelle: conseil sportif, logement, investissement, conciergerie et médiation.",
+    "Sport Synergie Consulting accompagne les athlètes dans la gestion de leur carrière et leur vie personnelle: conseil sportif, logement, investissement, conciergerie et médiation.",
   keywords: [
     "gestion de carrière sportive",
     "conseiller sportif multisport",
@@ -34,19 +34,19 @@ export const metadata: Metadata = {
         url: "/dsc01673.jpg",
         width: 1280,
         height: 853,
-        alt: "Elite Sports Conseils",
+        alt: "Sport Synergie Consulting",
       },
       {
         url: "/Depassement-de-soi.webp",
         width: 1200,
         height: 630,
-        alt: "Dépassement de soi - Elite Sports Conseils",
+        alt: "Dépassement de soi - Sport Synergie Consulting",
       },
       {
         url: "/logo.png",
         width: 2000,
         height: 2000,
-        alt: "Logo Elite Sports Conseils",
+        alt: "Logo Sport Synergie Consulting",
       },
     ],
   },
@@ -63,7 +63,7 @@ export default function Home() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Elite Sports Conseils",
+    name: "Sport Synergie Consulting",
     description:
       "Cabinet de conseil sportif et d'accompagnement global pour la gestion de carrière des athlètes: sur et en dehors du terrain.",
     url: "/",
@@ -75,7 +75,7 @@ export default function Home() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: "Elite Sports Conseils",
+    name: "Sport Synergie Consulting",
     areaServed: "France",
     serviceType: [
       "Conseil sportif",

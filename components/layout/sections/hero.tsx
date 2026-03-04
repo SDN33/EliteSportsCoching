@@ -139,7 +139,7 @@ export const HeroSection = () => {
               & Gestion de Carrière
             </h1>
             <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-700 dark:text-muted-foreground sm:text-lg md:mx-0 md:text-xl">
-              Elite Sports Conseils accompagne les athlètes dans la gestion de
+              Sport Synergie Consulting accompagne les athlètes dans la gestion de
               leur carrière et leur vie personnelle: conseil sportif, logement,
               investissement, conciergerie et médiation.
             </p>
