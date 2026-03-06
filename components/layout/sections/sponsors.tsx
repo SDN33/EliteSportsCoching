@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Target } from "lucide-react";
 
 export const SponsorsSection = () => {
   return (
@@ -10,13 +11,14 @@ export const SponsorsSection = () => {
         <div data-reveal className="space-y-12">
           {/* Header */}
           <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400">
-              🎯 Qui Sommes-Nous
+            <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400">
+              <Target className="size-4 flex-shrink-0" />
+              <span>Qui Sommes-Nous</span>
             </p>
             <h2
               data-reveal
               data-reveal-delay="1"
-              className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
+              className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
             >
               Sport Synergie Consulting
               <br className="hidden md:block" />

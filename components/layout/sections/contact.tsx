@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Building2, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Building2, Mail, MapPin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
@@ -66,13 +66,14 @@ export const ContactSection = () => {
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_1.2fr] lg:gap-16">
           {/* Left Section - Info */}
-          <div data-reveal="left" className="flex flex-col gap-10">
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <p className="text-xs uppercase tracking-widest font-bold text-orange-400">
-                  🚀 Parlons de Votre Stratégie
+          <div data-reveal="left" className="flex flex-col gap-10 items-center lg:items-start">
+            <div className="space-y-6 w-full">
+              <div className="space-y-3 text-center lg:text-left">
+                <p className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400">
+                  <ArrowRight className="size-4 flex-shrink-0" />
+                  <span>Parlons de Votre Stratégie</span>
                 </p>
-                <h2 className="font-title text-4xl md:text-5xl font-bold leading-tight text-foreground">
+                <h2 className="font-title text-4xl md:text-5xl font-bold leading-tight text-foreground text-balance-pretty">
                   Transformer Vos Ambitions
                   <br className="hidden md:block" />
                   <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
@@ -81,7 +82,7 @@ export const ContactSection = () => {
                 </h2>
               </div>
 
-              <p className="text-lg leading-relaxed text-muted-foreground max-w-xl">
+              <p className="text-lg leading-relaxed text-muted-foreground max-w-xl text-center lg:text-left">
                 Dans un premier appel, analysons votre contexte, vos objectifs réels et ce qui vous freine. Voyons comment Sport Synergie peut accélérer votre trajectoire.
               </p>
             </div>

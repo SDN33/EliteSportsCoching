@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Dumbbell } from "lucide-react";
 
 const serviceList = [
   "Conseil sportif de haut niveau",
@@ -23,13 +24,14 @@ export const ServicesSection = () => {
       <div className="container">
         {/* Header */}
         <div className="mb-16 text-center md:mb-20">
-          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
-            💪 10 Domaines d&apos;Excellence
+          <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            <Dumbbell className="size-4 flex-shrink-0" />
+            <span>10 Domaines d&apos;Excellence</span>
           </p>
           <h2
             data-reveal
             data-reveal-delay="1"
-            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
+            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
           >
             Accompagnement 360°
             <br className="hidden md:block" />
@@ -43,7 +45,7 @@ export const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {serviceList.map((service, index) => (
             <article
               key={service}

@@ -1,4 +1,4 @@
-import { HeartHandshake, Lightbulb, ShieldCheck, Sparkles, Trophy } from "lucide-react";
+import { HeartHandshake, Lightbulb, ShieldCheck, Sparkles, Trophy, Zap } from "lucide-react";
 
 const values = [
   "Dépassement de soi",
@@ -39,6 +39,11 @@ const valuePillars = [
     title: "Culture de transmission",
     text: "Faire progresser les individus pour renforcer la performance du collectif.",
   },
+  {
+    icon: Zap,
+    title: "Réactivité & adaptabilité",
+    text: "Répondre avec agilité aux changements de contexte pour maintenir le cap vers les objectifs.",
+  },
 ];
 
 export const TeamSection = () => {
@@ -51,13 +56,14 @@ export const TeamSection = () => {
       <div className="container">
         {/* Header */}
         <div className="mb-16 text-center md:mb-20">
-          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
-            ⚡ Ce Qui Nous Définit
+          <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            <Zap className="size-4 flex-shrink-0" />
+            <span>Ce Qui Nous Définit</span>
           </p>
           <h2
             data-reveal
             data-reveal-delay="1"
-            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
+            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
           >
             Une Culture
             <br className="hidden md:block" />
