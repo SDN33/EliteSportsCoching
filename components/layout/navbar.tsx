@@ -11,7 +11,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import { ToggleTheme } from "./toogle-theme";
 import { BrandLogo } from "./brand-logo";
 
 interface RouteProps {
@@ -55,9 +54,8 @@ export const Navbar = () => {
         ))}
       </nav>
 
-      {/* Desktop CTA & Theme */}
+      {/* Desktop CTA */}
       <div className="hidden items-center gap-3 lg:flex">
-        <ToggleTheme className="border border-white/20 bg-white/10 hover:bg-white/20 text-white transition-all" />
         <Button
           asChild
           size="sm"
@@ -69,7 +67,6 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className="flex items-center gap-2 lg:hidden">
-        <ToggleTheme className="border border-white/20 bg-white/10 hover:bg-white/20 text-white transition-all" />
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button
