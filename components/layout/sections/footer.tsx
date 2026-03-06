@@ -13,7 +13,7 @@ const links = [
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="relative overflow-hidden py-12 md:py-16">
+    <footer id="footer" className="relative overflow-hidden py-10 md:py-16">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-black/20 -z-10" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/10 to-transparent rounded-full blur-3xl -z-10" />
@@ -21,7 +21,7 @@ export const FooterSection = () => {
       <div className="container">
         <div
           data-reveal
-          className="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl px-8 py-12 md:px-12 md:py-16 shadow-2xl"
+          className="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl px-5 py-8 sm:px-8 sm:py-12 md:px-12 md:py-16 shadow-2xl"
         >
           {/* Decorative element */}
           <div className="pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full bg-blue-500/15 blur-3xl" />

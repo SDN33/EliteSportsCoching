@@ -127,6 +127,12 @@ html {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  /* Prevent text overflow on small screens */
+  h1, h2, h3 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
 }
 
 /* Smooth scrolling & transitions */

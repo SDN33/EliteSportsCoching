@@ -41,13 +41,13 @@ const methodSteps = [
 
 export const FeaturesSection = () => {
   return (
-    <section id="methodologie" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="methodologie" className="relative py-14 sm:py-20 md:py-32 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl bg-gradient-to-r from-blue-500/5 via-amber-500/5 to-blue-500/5 rounded-full blur-3xl -z-10" />
 
       <div className="container">
         {/* Header */}
-        <div className="mb-16 text-center md:mb-20">
+        <div className="mb-10 sm:mb-16 text-center md:mb-20">
           <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
             <Settings2 className="size-4 flex-shrink-0" />
             <span>Votre Roadmap de Succès</span>
@@ -55,10 +55,10 @@ export const FeaturesSection = () => {
           <h2
             data-reveal
             data-reveal-delay="1"
-            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
+            className="font-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
           >
             6 Étapes Pour
-            <br className="hidden md:block" />
+            <br />
             <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
               Performer à Votre Meilleur
             </span>
@@ -75,13 +75,13 @@ export const FeaturesSection = () => {
               key={title}
               data-reveal
               data-reveal-delay={((index % 4) + 1).toString()}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-8 transition-all duration-500 hover:border-blue-500/50 hover:-translate-y-3 hover:shadow-2xl hover:shadow-blue-500/20"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-5 sm:p-8 transition-all duration-500 hover:border-blue-500/50 hover:-translate-y-3 hover:shadow-2xl hover:shadow-blue-500/20"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-500 -z-10" />
 
               {/* Step number and icon container */}
-              <div className="flex items-start justify-between gap-4 mb-6">
+              <div className="flex items-start justify-between gap-4 mb-4 sm:mb-6">
                 <div className="inline-flex rounded-lg border border-blue-500/30 bg-blue-500/10 p-3 text-blue-400 group-hover:border-blue-400/60 group-hover:bg-blue-500/20 group-hover:scale-110 transition-all duration-300">
                   <Icon className="size-6" />
                 </div>
