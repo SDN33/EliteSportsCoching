@@ -58,7 +58,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="contact" className="relative py-14 sm:py-20 md:py-32 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-500/15 to-transparent rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-amber-500/15 to-transparent rounded-full blur-3xl -z-10" />
@@ -73,23 +73,23 @@ export const ContactSection = () => {
                   <ArrowRight className="size-4 flex-shrink-0" />
                   <span>Parlons de Votre Stratégie</span>
                 </p>
-                <h2 className="font-title text-4xl md:text-5xl font-bold leading-tight text-foreground text-balance-pretty">
+                <h2 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground text-balance-pretty">
                   Transformer Vos Ambitions
-                  <br className="hidden md:block" />
+                  <br />
                   <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
                     En Plan de Carrière
                   </span>
                 </h2>
               </div>
 
-              <p className="text-lg leading-relaxed text-muted-foreground max-w-xl text-center lg:text-left">
+              <p className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-xl text-center lg:text-left">
                 Dans un premier appel, analysons votre contexte, vos objectifs réels et ce qui vous freine. Voyons comment Sport Synergie peut accélérer votre trajectoire.
               </p>
             </div>
 
             {/* Contact Cards */}
-            <div className="grid gap-4 sm:grid-cols-2">
-              <article data-reveal data-reveal-delay="1" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
+              <article data-reveal data-reveal-delay="1" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
                   <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
@@ -97,10 +97,10 @@ export const ContactSection = () => {
                   </div>
                   <span className="font-bold text-white">E-mail Direct</span>
                 </div>
-                <p className="text-sm text-white/70 font-medium">contact@elitesportscoching.com</p>
+                <p className="text-sm text-white/70 font-medium break-all">contact@elitesportscoching.com</p>
               </article>
 
-              <article data-reveal data-reveal-delay="2" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
+              <article data-reveal data-reveal-delay="2" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
                   <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
@@ -111,7 +111,7 @@ export const ContactSection = () => {
                 <p className="text-sm text-white/70 font-medium">+33 6 00 00 00 00</p>
               </article>
 
-              <article data-reveal data-reveal-delay="3" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
+              <article data-reveal data-reveal-delay="3" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
                   <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
@@ -122,7 +122,7 @@ export const ContactSection = () => {
                 <p className="text-sm text-white/70 font-medium">Athlètes, joueurs, sportifs de haut niveau</p>
               </article>
 
-              <article data-reveal data-reveal-delay="4" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
+              <article data-reveal data-reveal-delay="4" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
                   <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
@@ -141,7 +141,7 @@ export const ContactSection = () => {
             data-reveal-delay="1"
             className="rounded-3xl border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl shadow-2xl overflow-hidden"
           >
-            <CardContent className="p-8 md:p-10">
+            <CardContent className="p-5 sm:p-8 md:p-10">
               <div className="mb-8">
                 <h3 className="font-title text-2xl font-bold text-white mb-2">Formulaire d&apos;Accompagnement</h3>
                 <p className="text-sm text-white/60">Remplissez ce formulaire pour commencer votre parcours</p>

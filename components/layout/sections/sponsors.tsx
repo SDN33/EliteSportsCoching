@@ -3,7 +3,7 @@ import { Target } from "lucide-react";
 
 export const SponsorsSection = () => {
   return (
-    <section id="identite" className="relative py-20 md:py-32 overflow-hidden">
+    <section id="identite" className="relative py-14 sm:py-20 md:py-32 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-b from-blue-500/10 to-transparent rounded-full blur-3xl -z-10" />
 
@@ -18,10 +18,10 @@ export const SponsorsSection = () => {
             <h2
               data-reveal
               data-reveal-delay="1"
-              className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
+              className="font-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
             >
               Sport Synergie Consulting
-              <br className="hidden md:block" />
+              <br />
               <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
                 Votre Partenaire Multisport
               </span>
@@ -30,7 +30,7 @@ export const SponsorsSection = () => {
             <p
               data-reveal
               data-reveal-delay="2"
-              className="text-lg text-muted-foreground max-w-2xl mx-auto"
+              className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto"
             >
               L'accompagnement 360° des athlètes : conseil sportif pur, gestion de carrière stratégique, et soutien dans tous les domaines de votre vie professionnelle et personnelle.
             </p>
