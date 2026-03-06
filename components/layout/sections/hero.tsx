@@ -76,8 +76,7 @@ export const HeroSection = () => {
             variant="outline"
             className="mx-auto inline-flex items-center gap-2 border-orange-500/40 bg-white/10 backdrop-blur-lg px-3 sm:px-5 py-2 text-xs uppercase tracking-wider sm:tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
           >
-            <Trophy className="size-3.5 flex-shrink-0" />
-            Accompagnement Premium
+            Conseiller Sportif Multi-Sports
           </Badge>
 
           {/* Main Headline */}
