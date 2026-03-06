@@ -25,18 +25,18 @@ export const CommunitySection = () => {
           <div className="relative space-y-12">
             {/* Header */}
             <div className="space-y-6 max-w-4xl">
-              <p data-reveal className="text-xs uppercase tracking-widest font-bold text-blue-300">
-                💙 Votre Univers de Performance
+              <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-300">
+                🌟 Votre Écosystème de Réussite
               </p>
               <h2
                 data-reveal
                 data-reveal-delay="1"
                 className="font-title text-4xl md:text-5xl font-bold leading-tight text-white"
               >
-                Un Soutien Complet,
+                Vivre Votre Meilleure Carrière.
                 <br className="hidden md:block" />
-                <span className="bg-gradient-to-r from-blue-300 to-amber-200 bg-clip-text text-transparent">
-                  Sur et Hors du Terrain
+                <span className="bg-gradient-to-r from-blue-300 to-orange-300 bg-clip-text text-transparent">
+                  Sans Stress Administratif.
                 </span>
               </h2>
               <p
@@ -44,7 +44,7 @@ export const CommunitySection = () => {
                 data-reveal-delay="2"
                 className="text-lg leading-relaxed text-white/80 max-w-3xl"
               >
-                Au-delà du conseil sportif, Sport Synergie Consulting accompagne les athlètes dans tous les aspects de leur vie: logement, investissement, conciergerie premium, et médiation. Une présence totale pour performer.
+                Gestion de carrière, logement, investissement, conciergerie, médiation. Nous gérons la complexité, vous vous concentrez sur vos performances.
               </p>
             </div>
 

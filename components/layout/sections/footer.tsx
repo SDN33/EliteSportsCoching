@@ -32,7 +32,7 @@ export const FooterSection = () => {
               <div className="flex flex-col gap-4">
                 <BrandLogo className="w-[200px]" />
                 <p className="text-sm text-white/60 max-w-xs">
-                  Accompagnement global pour les athlètes: conseil sportif, gestion de carrière, logement et investissement.
+                  Gestion de carrière, conseil sportif, logement & investissement. Votre succès, notre mission.
                 </p>
               </div>
 

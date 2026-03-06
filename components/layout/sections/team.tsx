@@ -51,18 +51,18 @@ export const TeamSection = () => {
       <div className="container">
         {/* Header */}
         <div className="mb-16 text-center md:mb-20">
-          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-blue-400 mb-4">
-            ⚡ Nos Valeurs Fondamentales
+          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            ⚡ Ce Qui Nous Définit
           </p>
           <h2
             data-reveal
             data-reveal-delay="1"
             className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
           >
-            Des Valeurs Fortes
+            Une Culture
             <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent">
-              Pour la Durabilité
+            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+              D&apos;Excellence & Transmission
             </span>
           </h2>
         </div>

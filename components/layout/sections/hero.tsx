@@ -74,32 +74,33 @@ export const HeroSection = () => {
           {/* Premium Badge */}
           <Badge
             variant="outline"
-            className="mx-auto inline-block border-amber-500/40 bg-white/10 backdrop-blur-lg px-5 py-2 text-xs uppercase tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
+            className="mx-auto inline-block border-orange-500/40 bg-white/10 backdrop-blur-lg px-5 py-2 text-xs uppercase tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
           >
-            ✨ Conseil Sportif Premium
+            🏆 Accompagnement Premium
           </Badge>
 
           {/* Main Headline */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h1
               data-reveal="true"
               data-reveal-delay="1"
               className="font-title text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-2xl"
             >
-              Sport Synergie
-              <span className="block bg-gradient-to-r from-blue-400 via-amber-300 to-blue-400 bg-clip-text text-transparent">
-                Consulting
+              Transformer votre carrière
+              <br className="hidden md:block" />
+              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-400 bg-clip-text text-transparent">
+                en stratégie gagnante
               </span>
             </h1>
 
             <p
               data-reveal="true"
               data-reveal-delay="2"
-              className="text-lg md:text-2xl text-white/85 font-light leading-relaxed max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto"
             >
-              Accompagnement global des athlètes:
+              Gestion de carrière, conseil sportif, logement, investissement & conciergerie.
               <br className="hidden sm:block" />
-              <span className="text-amber-300 font-medium">gestion de carrière, conseil, logement & investissement</span>
+              <span className="text-orange-400 font-semibold">L'accompagnement 360° qui accélère votre succès.</span>
             </p>
           </div>
 
@@ -119,48 +120,34 @@ export const HeroSection = () => {
             ))}
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Pills Style */}
           <div
             data-reveal="true"
             data-reveal-delay="4"
-            className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
+            className="flex flex-col sm:flex-row gap-4 justify-center pt-10"
           >
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold shadow-2xl hover:shadow-3xl transition-all duration-300 group"
+              className="rounded-full px-8 h-auto py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group"
             >
-              <Link href="#presentation" className="flex items-center gap-2">
-                Découvrir notre approche
+              <Link href="#contact" className="flex items-center gap-2 text-base">
+                Commencer mon accompagnement
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="rounded-full px-8 border-white/30 bg-white/10 backdrop-blur-lg text-white hover:bg-white/20 hover:border-white/50 font-bold transition-all duration-300"
+              className="rounded-full px-8 h-auto py-3.5 border-2 border-white/40 bg-transparent hover:bg-white/10 text-white font-bold transition-all duration-300"
             >
-              <Link href="#contact">
-                Démarrer un accompagnement
+              <Link href="#presentation" className="text-base">
+                Voir notre approche
               </Link>
             </Button>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div
-          data-reveal="true"
-          data-reveal-delay="5"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
-        >
-          <div className="flex flex-col items-center gap-2 text-white/60">
-            <span className="text-xs uppercase tracking-widest font-medium">Scroll</span>
-            <svg className="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-        </div>
       </div>
     </section>
   );

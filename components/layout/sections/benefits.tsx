@@ -33,28 +33,28 @@ export const BenefitsSection = () => {
           {/* Left Content */}
           <div data-reveal="left" className="flex flex-col gap-8">
             <div className="space-y-4">
-              <p className="text-xs uppercase tracking-widest font-bold text-blue-400">
-                🏆 Expertise Reconnue
+              <p className="text-xs uppercase tracking-widest font-bold text-orange-400">
+                🏆 L'Expert Derrière Sport Synergie
               </p>
               <h2 className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground">
                 Eddy Saint-Cyr
                 <br className="hidden md:block" />
-                <span className="bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent">
-                  Architecte de Performance
+                <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                  Architecte de Vos Victoires
                 </span>
               </h2>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Ex-joueur professionnel, Eddy combine <span className="text-white font-semibold">conseil sportif pur</span>, préparation mentale et accompagnement humain global.
+                Ex-joueur professionnel devenu stratège. Eddy fusionne <span className="text-white font-semibold">conseil sportif de haut niveau</span>, préparation mentale et accompagnement humain global.
               </p>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Chaque mission commence par un diagnostic précis, suivi d'un plan d'action clair et mesurable aligné à vos objectifs.
+                Approche unique : diagnostic précis → plan d'action clair → suivi intensif. Chaque détail compte, chaque étape se mesure.
               </p>
-              <p className="text-base leading-relaxed text-muted-foreground italic">
-                Sport Synergie Consulting: L'exigence du haut niveau, la transmission du terrain, l'accompagnement global pour votre réussite.
-              </p>
+              <div className="text-base leading-relaxed text-orange-400 font-semibold p-4 rounded-lg border border-orange-500/30 bg-orange-500/10">
+                💡 "L'exigence du haut niveau + transmission du terrain = accélération de votre réussite"
+              </div>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export const BenefitsSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-500 -z-10" />
 
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 inline-flex rounded-lg border border-blue-500/30 bg-blue-500/10 p-3 text-blue-400 group-hover:border-blue-400/60 group-hover:bg-blue-500/20 transition-all duration-300">
+                  <div className="mt-1 inline-flex rounded-lg border border-orange-500/40 bg-orange-500/15 p-3 text-orange-400 group-hover:border-orange-400/60 group-hover:bg-orange-500/25 transition-all duration-300">
                     <Icon className="size-5" />
                   </div>
                   <div className="flex-1">

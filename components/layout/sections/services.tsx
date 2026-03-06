@@ -23,22 +23,22 @@ export const ServicesSection = () => {
       <div className="container">
         {/* Header */}
         <div className="mb-16 text-center md:mb-20">
-          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-blue-400 mb-4">
-            🎯 Offres & Expertises
+          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            💪 10 Domaines d&apos;Excellence
           </p>
           <h2
             data-reveal
             data-reveal-delay="1"
             className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
           >
-            Accompagnement Global
+            Accompagnement 360°
             <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
               Sur et Hors du Terrain
             </span>
           </h2>
           <p data-reveal data-reveal-delay="2" className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-            10 domaines d'expertise pour votre réussite complète
+            Tout ce dont vous avez besoin pour exceller. Carrière. Finances. Vie. Couvert.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export const ServicesSection = () => {
               {/* Badge */}
               <Badge
                 variant="outline"
-                className="mb-4 border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:border-blue-400/60 group-hover:bg-blue-500/20 transition-all"
+                className="mb-4 border-orange-500/40 bg-orange-500/15 text-orange-400 group-hover:border-orange-400/60 group-hover:bg-orange-500/25 transition-all"
               >
                 Axe {String(index + 1).padStart(2, "0")}
               </Badge>

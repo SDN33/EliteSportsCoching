@@ -48,22 +48,22 @@ export const FeaturesSection = () => {
       <div className="container">
         {/* Header */}
         <div className="mb-16 text-center md:mb-20">
-          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-blue-400 mb-4">
-            📊 Approche Structurée
+          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            ⚙️ Votre Roadmap de Succès
           </p>
           <h2
             data-reveal
             data-reveal-delay="1"
             className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
           >
-            Méthodologie
+            6 Étapes Pour
             <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent">
-              D&apos;Accompagnement Premium
+            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+              Performer à Votre Meilleur
             </span>
           </h2>
           <p data-reveal data-reveal-delay="2" className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-            6 étapes éprouvées pour transformer les ambitions en résultats durables
+            Une méthode claire. Un accompagnement complet. Des résultats mesurables.
           </p>
         </div>
 

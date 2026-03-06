@@ -61,9 +61,9 @@ export const Navbar = () => {
         <Button
           asChild
           size="sm"
-          className="rounded-full px-7 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+          className="rounded-full px-7 bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          <Link href="#contact">Consulter</Link>
+          <Link href="#contact">Commencer</Link>
         </Button>
       </div>
 
@@ -101,10 +101,10 @@ export const Navbar = () => {
               ))}
               <Button
                 asChild
-                className="mt-6 rounded-xl py-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold hover:from-blue-600 hover:to-blue-700"
+                className="mt-6 rounded-xl py-6 bg-orange-500 hover:bg-orange-600 text-white font-bold"
                 onClick={() => setIsOpen(false)}
               >
-                <Link href="#contact">Consulter maintenant</Link>
+                <Link href="#contact">Commencer maintenant</Link>
               </Button>
             </div>
           </SheetContent>

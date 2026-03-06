@@ -10,18 +10,18 @@ export const SponsorsSection = () => {
         <div data-reveal className="space-y-12">
           {/* Header */}
           <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <p data-reveal className="text-xs uppercase tracking-widest font-bold text-blue-400">
-              🎯 Notre Positionnement
+            <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400">
+              🎯 Qui Sommes-Nous
             </p>
             <h2
               data-reveal
               data-reveal-delay="1"
               className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
             >
-              Conseiller Sportif Multisport
+              Sport Synergie Consulting
               <br className="hidden md:block" />
-              <span className="bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent">
-                & Accompagnement Premium
+              <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                Votre Partenaire Multisport
               </span>
             </h2>
 
@@ -30,7 +30,7 @@ export const SponsorsSection = () => {
               data-reveal-delay="2"
               className="text-lg text-muted-foreground max-w-2xl mx-auto"
             >
-              Sport Synergie Consulting: l'accompagnement global des athlètes avec conseil sportif pur, gestion de carrière et soutien dans la vie personnelle et professionnelle.
+              L'accompagnement 360° des athlètes : conseil sportif pur, gestion de carrière stratégique, et soutien dans tous les domaines de votre vie professionnelle et personnelle.
             </p>
           </div>
 

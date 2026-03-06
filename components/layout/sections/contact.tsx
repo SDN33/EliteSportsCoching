@@ -69,20 +69,20 @@ export const ContactSection = () => {
           <div data-reveal="left" className="flex flex-col gap-10">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-xs uppercase tracking-widest font-bold text-blue-400">
-                  🚀 Démarrer Votre Accompagnement
+                <p className="text-xs uppercase tracking-widest font-bold text-orange-400">
+                  🚀 Parlons de Votre Stratégie
                 </p>
                 <h2 className="font-title text-4xl md:text-5xl font-bold leading-tight text-foreground">
-                  Construisons Votre Trajectoire
+                  Transformer Vos Ambitions
                   <br className="hidden md:block" />
-                  <span className="bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent">
-                    De Carrière Premium
+                  <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                    En Plan de Carrière
                   </span>
                 </h2>
               </div>
 
               <p className="text-lg leading-relaxed text-muted-foreground max-w-xl">
-                Analysons votre situation, vos objectifs et vos besoins: conseil sportif, gestion de carrière, logement, investissement. Définissons ensemble un plan d'action concret.
+                Dans un premier appel, analysons votre contexte, vos objectifs réels et ce qui vous freine. Voyons comment Sport Synergie peut accélérer votre trajectoire.
               </p>
             </div>
 
@@ -248,9 +248,9 @@ export const ContactSection = () => {
 
                   <Button
                     type="submit"
-                    className="rounded-lg h-12 mt-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="rounded-lg h-12 mt-2 bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 w-full"
                   >
-                    Démarrer mon accompagnement
+                    Envoyer ma demande
                   </Button>
                 </form>
               </Form>
