@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Trophy } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -42,7 +42,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative h-screen min-h-[600px] overflow-hidden flex items-center justify-center pt-20">
+    <section id="hero" className="relative h-screen min-h-[600px] overflow-hidden flex items-center justify-center">
       {/* Video Background - Now the HERO element */}
       <video
         ref={videoRef}
@@ -74,9 +74,10 @@ export const HeroSection = () => {
           {/* Premium Badge */}
           <Badge
             variant="outline"
-            className="mx-auto inline-block border-orange-500/40 bg-white/10 backdrop-blur-lg px-5 py-2 text-xs uppercase tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
+            className="mx-auto inline-flex items-center gap-2 border-orange-500/40 bg-white/10 backdrop-blur-lg px-5 py-2 text-xs uppercase tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
           >
-            🏆 Accompagnement Premium
+            <Trophy className="size-3.5 flex-shrink-0" />
+            Accompagnement Premium
           </Badge>
 
           {/* Main Headline */}
@@ -84,7 +85,7 @@ export const HeroSection = () => {
             <h1
               data-reveal="true"
               data-reveal-delay="1"
-              className="font-title text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-2xl"
+              className="font-title text-5xl md:text-7xl font-bold leading-tight text-white drop-shadow-2xl text-balance-pretty"
             >
               Transformer votre carrière
               <br className="hidden md:block" />
@@ -98,9 +99,13 @@ export const HeroSection = () => {
               data-reveal-delay="2"
               className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto"
             >
-              Gestion de carrière, conseil sportif, logement, investissement & conciergerie.
+              Gestion de carrière, conseil sportif,
               <br className="hidden sm:block" />
-              <span className="text-orange-400 font-semibold">L'accompagnement 360° qui accélère votre succès.</span>
+              logement, investissement & conciergerie.
+              <br className="hidden sm:block" />
+              <span className="text-orange-400 font-semibold">
+                L&apos;accompagnement 360° qui accélère votre succès.
+              </span>
             </p>
           </div>
 
@@ -124,7 +129,7 @@ export const HeroSection = () => {
           <div
             data-reveal="true"
             data-reveal-delay="4"
-            className="flex flex-col sm:flex-row gap-4 justify-center pt-10"
+            className="flex flex-col sm:flex-row gap-6 justify-center pt-10 pb-8"
           >
             <Button
               asChild

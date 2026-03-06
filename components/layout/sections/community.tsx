@@ -1,9 +1,12 @@
+import { Star, Check } from "lucide-react";
+
 const markers = [
   "Accompagnement logement et installation",
   "Conseil en investissement et gestion patrimoniale",
   "Service de conciergerie et chauffeur privé",
   "Médiation en cas de rupture avec un agent",
   "Soutien dans la vie personnelle et familiale",
+  "Préparation mentale et accompagnement psychologique",
 ];
 
 export const CommunitySection = () => {
@@ -25,13 +28,14 @@ export const CommunitySection = () => {
           <div className="relative space-y-12">
             {/* Header */}
             <div className="space-y-6 max-w-4xl">
-              <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-300">
-                🌟 Votre Écosystème de Réussite
+              <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-300">
+                <Star className="size-4 flex-shrink-0" />
+                <span>Votre Écosystème de Réussite</span>
               </p>
               <h2
                 data-reveal
                 data-reveal-delay="1"
-                className="font-title text-4xl md:text-5xl font-bold leading-tight text-white"
+                className="font-title text-4xl md:text-5xl font-bold leading-tight text-white text-balance-pretty"
               >
                 Vivre Votre Meilleure Carrière.
                 <br className="hidden md:block" />
@@ -60,7 +64,7 @@ export const CommunitySection = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-500 -z-10" />
 
                   <p className="text-sm font-medium leading-relaxed text-white/90 group-hover:text-white transition-colors flex items-start gap-3">
-                    <span className="text-blue-400 font-bold text-lg mt-0.5 group-hover:scale-125 transition-transform">✓</span>
+                    <Check className="size-5 text-blue-400 flex-shrink-0 mt-0.5 group-hover:scale-125 transition-transform" />
                     <span>{item}</span>
                   </p>
                 </div>

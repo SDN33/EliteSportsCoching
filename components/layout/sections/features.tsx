@@ -1,4 +1,4 @@
-import { BarChart3, Brain, Compass, Flag, Route, TimerReset } from "lucide-react";
+import { BarChart3, Brain, Compass, Flag, Route, TimerReset, Settings2 } from "lucide-react";
 
 const methodSteps = [
   {
@@ -48,13 +48,14 @@ export const FeaturesSection = () => {
       <div className="container">
         {/* Header */}
         <div className="mb-16 text-center md:mb-20">
-          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
-            ⚙️ Votre Roadmap de Succès
+          <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            <Settings2 className="size-4 flex-shrink-0" />
+            <span>Votre Roadmap de Succès</span>
           </p>
           <h2
             data-reveal
             data-reveal-delay="1"
-            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
+            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground text-balance-pretty"
           >
             6 Étapes Pour
             <br className="hidden md:block" />
