@@ -32,68 +32,79 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-3 z-50 mx-auto mt-2 flex w-[calc(100dvw-1rem)] max-w-[calc(100dvw-1rem)] items-center justify-between rounded-2xl border border-border/70 bg-background/75 px-2.5 py-2 shadow-[0_12px_40px_-22px_rgba(8,22,46,0.55)] backdrop-blur-xl sm:w-[95%] sm:max-w-screen-2xl sm:px-5 lg:px-6">
-      <Link href="#" className="inline-flex items-center">
+    <header className="sticky top-3 z-50 mx-auto mt-2 flex w-[calc(100dvw-1rem)] max-w-[calc(100dvw-1rem)] items-center justify-between rounded-full border border-white/15 bg-black/40 backdrop-blur-2xl px-2 py-2.5 shadow-2xl sm:w-[95%] sm:max-w-screen-2xl sm:px-6 lg:px-8">
+      <Link href="#" className="inline-flex items-center hover:opacity-80 transition-opacity">
         <BrandLogo
           crop
-          className="h-11 w-[126px] min-[360px]:w-[142px] sm:h-14 sm:w-[220px]"
+          className="h-10 w-[120px] sm:h-12 sm:w-[200px]"
           priority
         />
       </Link>
 
-      <nav className="hidden items-center rounded-full border border-border/70 bg-background/65 p-1.5 lg:flex">
+      {/* Desktop Navigation */}
+      <nav className="hidden items-center gap-1 lg:flex">
         {routeList.map(({ href, label }) => (
           <Button
             key={href}
             asChild
             variant="ghost"
-            className="rounded-full px-4 text-sm font-medium text-muted-foreground hover:bg-primary/12 hover:text-foreground"
+            className="rounded-full px-5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/10 transition-all duration-300"
           >
             <Link href={href}>{label}</Link>
           </Button>
         ))}
       </nav>
 
-      <div className="hidden items-center gap-2 lg:flex">
-        <ToggleTheme className="border border-border/60 bg-background/65" />
-        <Button asChild size="sm" className="rounded-full px-6 font-semibold">
-          <Link href="#contact">Conseil Sportif Premium</Link>
+      {/* Desktop CTA & Theme */}
+      <div className="hidden items-center gap-3 lg:flex">
+        <ToggleTheme className="border border-white/20 bg-white/10 hover:bg-white/20 text-white transition-all" />
+        <Button
+          asChild
+          size="sm"
+          className="rounded-full px-7 bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          <Link href="#contact">Commencer</Link>
         </Button>
       </div>
 
+      {/* Mobile Menu */}
       <div className="flex items-center gap-2 lg:hidden">
-        <ToggleTheme className="border border-border/60 bg-background/65" />
+        <ToggleTheme className="border border-white/20 bg-white/10 hover:bg-white/20 text-white transition-all" />
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button
               size="icon"
-              variant="outline"
-              className="rounded-full"
+              variant="ghost"
+              className="rounded-full text-white hover:bg-white/20"
               aria-label="Ouvrir le menu"
             >
               <Menu className="size-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent className="border-border/70 bg-background/95">
+          <SheetContent className="border-white/10 bg-gradient-to-b from-black/95 to-black/90 backdrop-blur-xl">
             <SheetHeader>
-              <SheetTitle className="flex items-center gap-3">
-                <BrandLogo crop className="h-12 w-[210px]" />
+              <SheetTitle className="flex items-center gap-3 text-white">
+                <BrandLogo crop className="h-10 w-[180px]" />
               </SheetTitle>
             </SheetHeader>
-            <div className="mt-8 grid gap-2">
+            <div className="mt-8 grid gap-3">
               {routeList.map(({ href, label }) => (
                 <Button
                   key={href}
                   asChild
                   variant="ghost"
-                  className="justify-start rounded-xl py-5 text-base"
+                  className="justify-start rounded-xl py-6 text-base text-white/70 hover:text-white hover:bg-white/10"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href={href}>{label}</Link>
                 </Button>
               ))}
-              <Button asChild className="mt-3 rounded-xl py-6" onClick={() => setIsOpen(false)}>
-                <Link href="#contact">Démarrer mon accompagnement</Link>
+              <Button
+                asChild
+                className="mt-6 rounded-xl py-6 bg-orange-500 hover:bg-orange-600 text-white font-bold"
+                onClick={() => setIsOpen(false)}
+              >
+                <Link href="#contact">Commencer maintenant</Link>
               </Button>
             </div>
           </SheetContent>

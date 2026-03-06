@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
   max-width: 100%;
   overflow-x: clip;
+  font-feature-settings: "rlig" 1, "calt" 1;
 }
 
 @layer base {
@@ -158,44 +159,30 @@ html {
     transform: translate3d(0, 20px, 0) scale(0.99);
   }
 
-  :is(#hero, #identite, #presentation, #methodologie, #domaines, #univers, #valeurs, #contact, #footer)
-    :is(h1, h2, h3, p, .section-kicker, li) {
-    text-align: center;
-  }
-
-  :is(#hero, #identite, #presentation, #methodologie, #domaines, #univers, #valeurs, #contact, #footer)
-    :is(h1, h2, h3).font-title {
-    letter-spacing: 0.02em;
-    word-spacing: 0.06em;
-    line-height: 1.18 !important;
-  }
-
-  :is(#hero, #identite, #presentation, #methodologie, #domaines, #univers, #valeurs, #contact, #footer)
-    p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #hero li {
-    justify-content: center;
-  }
-
-  #hero .container {
-    width: 100%;
-    max-width: 100%;
+  .container {
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
   }
+}
 
-  #hero .container > * {
-    min-width: 0;
-  }
+/* Smooth scrolling & transitions */
+button, a, [role="button"] {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  #contact .surface-soft > div {
-    justify-content: center;
-  }
+/* Input & form focus states */
+input, textarea, select {
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 [data-reveal].is-revealed {
@@ -241,4 +228,45 @@ html {
   50% {
     transform: translateY(-6px);
   }
+}
+
+/* Modern Premium Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 1000px 100%;
 }

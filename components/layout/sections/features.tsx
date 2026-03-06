@@ -41,38 +41,65 @@ const methodSteps = [
 
 export const FeaturesSection = () => {
   return (
-    <section id="methodologie" className="container py-16 md:py-24">
-      <div className="mb-10 text-center md:mb-12">
-        <p data-reveal className="section-kicker">Méthode de performance</p>
-        <h2 data-reveal data-reveal-delay="1" className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
-          Une méthodologie d&apos;accompagnement
-          <br className="hidden md:block" />
-          orientée résultats et progression durable.
-        </h2>
-      </div>
+    <section id="methodologie" className="relative py-20 md:py-32 overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl bg-gradient-to-r from-blue-500/5 via-amber-500/5 to-blue-500/5 rounded-full blur-3xl -z-10" />
 
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {methodSteps.map(({ title, detail, icon: Icon }, index) => (
-          <article
-            key={title}
+      <div className="container">
+        {/* Header */}
+        <div className="mb-16 text-center md:mb-20">
+          <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400 mb-4">
+            ⚙️ Votre Roadmap de Succès
+          </p>
+          <h2
             data-reveal
-            data-reveal-delay={((index % 4) + 1).toString()}
-            className="group relative rounded-3xl border border-border/70 bg-card/80 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/45 hover:shadow-[0_18px_42px_-30px_rgba(37,185,255,0.9)]"
+            data-reveal-delay="1"
+            className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
           >
-            <div className="mb-4 flex items-center justify-between">
-              <div className="inline-flex rounded-xl border border-primary/25 bg-primary/10 p-3">
-                <Icon className="size-5 text-primary" />
+            6 Étapes Pour
+            <br className="hidden md:block" />
+            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+              Performer à Votre Meilleur
+            </span>
+          </h2>
+          <p data-reveal data-reveal-delay="2" className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Une méthode claire. Un accompagnement complet. Des résultats mesurables.
+          </p>
+        </div>
+
+        {/* Grid of Method Steps */}
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {methodSteps.map(({ title, detail, icon: Icon }, index) => (
+            <article
+              key={title}
+              data-reveal
+              data-reveal-delay={((index % 4) + 1).toString()}
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-8 transition-all duration-500 hover:border-blue-500/50 hover:-translate-y-3 hover:shadow-2xl hover:shadow-blue-500/20"
+            >
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-500 -z-10" />
+
+              {/* Step number and icon container */}
+              <div className="flex items-start justify-between gap-4 mb-6">
+                <div className="inline-flex rounded-lg border border-blue-500/30 bg-blue-500/10 p-3 text-blue-400 group-hover:border-blue-400/60 group-hover:bg-blue-500/20 group-hover:scale-110 transition-all duration-300">
+                  <Icon className="size-6" />
+                </div>
+                <span className="text-4xl font-title font-bold text-white/20 group-hover:text-blue-400/40 transition-colors">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
               </div>
-              <span className="font-title text-2xl text-primary/35">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-            </div>
-            <h3 className="mb-2 text-xl font-semibold">{title}</h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              {detail}
-            </p>
-          </article>
-        ))}
+
+              {/* Content */}
+              <h3 className="font-title text-xl font-bold text-white mb-3">{title}</h3>
+              <p className="text-sm leading-relaxed text-white/70 group-hover:text-white/80 transition-colors">
+                {detail}
+              </p>
+
+              {/* Animated border accent on hover */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-blue-500/30 transition-colors duration-300 -z-10" />
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

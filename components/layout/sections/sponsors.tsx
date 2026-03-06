@@ -2,40 +2,62 @@ import Image from "next/image";
 
 export const SponsorsSection = () => {
   return (
-    <section id="identite" className="container py-16 md:py-24">
-      <div data-reveal className="section-shell relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_14%_10%,rgba(56,189,248,0.18),transparent_35%),radial-gradient(circle_at_86%_0%,rgba(232,200,122,0.16),transparent_30%)]" />
+    <section id="identite" className="relative py-20 md:py-32 overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-b from-blue-500/10 to-transparent rounded-full blur-3xl -z-10" />
 
-        <div className="relative mb-8 text-center md:mb-10">
-          <p data-reveal className="section-kicker">Positionnement</p>
-          <h2 data-reveal data-reveal-delay="1" className="font-title text-balance-pretty text-3xl font-semibold md:text-5xl">
-            Conseiller Sportif Multisport
-            <br className="hidden md:block" />
-            & Accompagnement Global de Carrière
-          </h2>
-          <p data-reveal data-reveal-delay="2" className="mx-auto mt-4 max-w-2xl text-sm text-muted-foreground md:text-base">
-            Sport Synergie Consulting se positionne sur l&apos;accompagnement global
-            des athlètes: conseil sportif pur, gestion de carrière et soutien
-            dans la vie personnelle et professionnelle.
-          </p>
-        </div>
+      <div className="container">
+        <div data-reveal className="space-y-12">
+          {/* Header */}
+          <div className="text-center space-y-6 max-w-3xl mx-auto">
+            <p data-reveal className="text-xs uppercase tracking-widest font-bold text-orange-400">
+              🎯 Qui Sommes-Nous
+            </p>
+            <h2
+              data-reveal
+              data-reveal-delay="1"
+              className="font-title text-4xl md:text-6xl font-bold leading-tight text-foreground"
+            >
+              Sport Synergie Consulting
+              <br className="hidden md:block" />
+              <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                Votre Partenaire Multisport
+              </span>
+            </h2>
 
-        <article
-          data-reveal
-          data-reveal-delay="1"
-          className="relative mx-auto max-w-5xl rounded-3xl border border-border/70 bg-card/82 p-4 shadow-[0_20px_50px_-30px_rgba(25,100,150,0.6)] sm:p-6"
-        >
-          <div className="flex min-h-[230px] items-center justify-center rounded-2xl border border-border/40 bg-gradient-to-b from-white to-slate-100 p-6 dark:from-slate-950 dark:to-black sm:min-h-[310px] md:min-h-[360px]">
+            <p
+              data-reveal
+              data-reveal-delay="2"
+              className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            >
+              L'accompagnement 360° des athlètes : conseil sportif pur, gestion de carrière stratégique, et soutien dans tous les domaines de votre vie professionnelle et personnelle.
+            </p>
+          </div>
+
+          {/* Feature Image */}
+          <article
+            data-reveal
+            data-reveal-delay="3"
+            className="relative mx-auto w-full max-w-5xl rounded-3xl overflow-hidden border border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:border-blue-500/50 group"
+          >
+            {/* Image Container */}
+            <div className="relative overflow-hidden h-[240px] sm:h-[320px] md:h-[400px] lg:h-[480px]">
               <Image
                 src="/dsc01673.jpg"
-                alt="Sport Synergie Consulting"
-                width={780}
-                height={280}
+                alt="Sport Synergie Consulting - Eddy Saint-Cyr"
+                width={1200}
+                height={480}
                 priority
-                className="w-full max-w-[780px] object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-          </div>
-        </article>
+              {/* Overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+
+            {/* Bottom accent bar */}
+            <div className="h-1 bg-gradient-to-r from-blue-500 via-amber-400 to-blue-500" />
+          </article>
+        </div>
       </div>
     </section>
   );

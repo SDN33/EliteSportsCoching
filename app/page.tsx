@@ -10,24 +10,25 @@ import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
 
 export const metadata: Metadata = {
-  title: "Conseil sportif & accompagnement de carrière",
+  title: "Sport Synergie Consulting - Accompagnement Global des Athlètes",
   description:
-    "Sport Synergie Consulting accompagne les athlètes dans la gestion de leur carrière et leur vie personnelle: conseil sportif, logement, investissement, conciergerie et médiation.",
+    "Transformez votre carrière sportive. Gestion de carrière, conseil sportif, logement, investissement & conciergerie. L'accompagnement 360° avec Eddy Saint-Cyr.",
   keywords: [
     "gestion de carrière sportive",
     "conseiller sportif multisport",
-    "accompagnement athlètes",
+    "accompagnement premium athlètes",
     "conciergerie sportive",
-    "aide logement joueur",
-    "conseil investissement sportif",
+    "conseil en investissement sportif",
+    "logement joueur professionnel",
+    "Eddy Saint-Cyr",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Conseil sportif & accompagnement de carrière",
+    title: "Sport Synergie Consulting - Accompagnement des Athlètes",
     description:
-      "Accompagnement global pour athlètes: gestion de carrière, conseil sportif, logement, investissement et conciergerie premium.",
+      "Transformez votre carrière : gestion stratégique, conseil sportif, logement, investissement & conciergerie. Accompagnement 360° premium avec Eddy Saint-Cyr.",
     url: "/",
     images: [
       {
@@ -52,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Conseil sportif & accompagnement de carrière",
+    title: "Sport Synergie Consulting - Accompagnement Premium des Athlètes",
     description:
-      "Conseil sportif, gestion de carrière et accompagnement global pour athlètes.",
+      "Transformez votre carrière sportive avec un accompagnement 360° : gestion, conseil, logement, investissement & conciergerie.",
     images: ["/dsc01673.jpg", "/Depassement-de-soi.webp"],
   },
 };

@@ -13,55 +13,89 @@ const links = [
 
 export const FooterSection = () => {
   return (
-    <footer id="footer" className="container pb-8">
-      <div
-        data-reveal
-        className="relative overflow-hidden rounded-[1.9rem] border border-border/70 bg-card/82 px-6 py-4 shadow-[0_20px_55px_-38px_rgba(15,96,148,0.7)] md:px-8 md:py-4"
-      >
-        <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-primary/12 blur-3xl" />
+    <footer id="footer" className="relative overflow-hidden py-12 md:py-16">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-black/20 -z-10" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/10 to-transparent rounded-full blur-3xl -z-10" />
 
-        <div className="relative flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-          <BrandLogo className="w-[200px]" />
+      <div className="container">
+        <div
+          data-reveal
+          className="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl px-8 py-12 md:px-12 md:py-16 shadow-2xl"
+        >
+          {/* Decorative element */}
+          <div className="pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full bg-blue-500/15 blur-3xl" />
 
-          <nav className="flex flex-wrap gap-2 md:justify-end">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="rounded-full border border-border/70 bg-background/70 px-3 py-1.5 text-xs font-medium text-muted-foreground transition-all hover:border-primary/55 hover:text-foreground"
+          <div className="relative space-y-8">
+            {/* Top Section - Logo and Navigation */}
+            <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+              <div className="flex flex-col gap-4">
+                <BrandLogo className="w-[200px]" />
+                <p className="text-sm text-white/60 max-w-xs">
+                  Gestion de carrière, conseil sportif, logement & investissement. Votre succès, notre mission.
+                </p>
+              </div>
+
+              {/* Navigation Links */}
+              <nav className="flex flex-wrap gap-3">
+                {links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 hover:border-blue-400/50 px-4 py-2 text-xs font-medium text-white/70 hover:text-white transition-all duration-300"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            {/* Divider */}
+            <div className="h-px bg-gradient-to-r from-white/10 via-white/20 to-white/10" />
+
+            {/* Bottom Section - Social & Credits */}
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="flex items-center gap-4">
+                <span className="text-xs font-medium text-white/70">Connectez-vous&nbsp;:</span>
+                <div className="flex gap-2">
+                  <button
+                    disabled
+                    title="Instagram – lien bientôt disponible"
+                    aria-label="Instagram"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-blue-400/50 opacity-60 hover:opacity-100 transition-all cursor-default"
+                  >
+                    <InstagramIcon width="16px" height="16px" />
+                  </button>
+                  <button
+                    disabled
+                    title="Facebook – lien bientôt disponible"
+                    aria-label="Facebook"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-blue-400/50 opacity-60 hover:opacity-100 transition-all cursor-default"
+                  >
+                    <FacebookIcon width="16px" height="16px" />
+                  </button>
+                </div>
+              </div>
+
+              {/* Copyright */}
+              <p className="text-xs text-white/50">
+                {`© ${new Date().getFullYear()} Sport Synergie Consulting. Tous droits réservés.`}
+              </p>
+            </div>
+
+            {/* Credits */}
+            <div className="text-xs text-white/40 border-t border-white/10 pt-4">
+              Site propulsé par{" "}
+              <a
+                href="https://stillinov.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
               >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-
-        <div className="relative mt-4 flex items-center gap-3 border-t border-border/70 pt-3">
-          <span className="text-xs text-muted-foreground">Suivez-nous&nbsp;:</span>
-          <button
-            disabled
-            title="Instagram – lien bientôt disponible"
-            aria-label="Instagram"
-            className="flex h-8 w-8 cursor-default items-center justify-center rounded-full border border-border/70 bg-background/70 opacity-50"
-          >
-            <InstagramIcon width="16px" height="16px" />
-          </button>
-          <button
-            disabled
-            title="Facebook – lien bientôt disponible"
-            aria-label="Facebook"
-            className="flex h-8 w-8 cursor-default items-center justify-center rounded-full border border-border/70 bg-background/70 opacity-50"
-          >
-            <FacebookIcon width="16px" height="16px" />
-          </button>
-        </div>
-
-        <div className="relative mt-3 border-t border-border/70 pt-3 text-xs text-muted-foreground">
-          {`© ${new Date().getFullYear()} Sport Synergie Consulting. Tous droits réservés. - Site propulsé par `}
-          <a href="https://stillinov.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-            Still-inov Agency
-          </a>
-          .
+                Still-inov Agency
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
