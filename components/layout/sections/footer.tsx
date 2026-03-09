@@ -15,8 +15,8 @@ export const FooterSection = () => {
   return (
     <footer id="footer" className="relative overflow-hidden py-10 md:py-16">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-black/20 -z-10" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/10 to-transparent rounded-full blur-3xl -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 -z-10" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-white/5 to-transparent rounded-full blur-3xl -z-10" />
 
       <div className="container">
         <div
@@ -24,7 +24,7 @@ export const FooterSection = () => {
           className="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl px-5 py-8 sm:px-8 sm:py-12 md:px-12 md:py-16 shadow-2xl"
         >
           {/* Decorative element */}
-          <div className="pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full bg-blue-500/15 blur-3xl" />
+          <div className="pointer-events-none absolute -right-24 -top-24 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
 
           <div className="relative space-y-8">
             {/* Top Section - Logo and Navigation */}
@@ -42,7 +42,7 @@ export const FooterSection = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 hover:border-blue-400/50 px-4 py-2 text-xs font-medium text-white/70 hover:text-white transition-all duration-300"
+                    className="rounded-lg border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 px-4 py-2 text-xs font-medium text-white/70 hover:text-white transition-all duration-300"
                   >
                     {link.label}
                   </Link>
@@ -62,7 +62,7 @@ export const FooterSection = () => {
                     disabled
                     title="Instagram – lien bientôt disponible"
                     aria-label="Instagram"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-blue-400/50 opacity-60 hover:opacity-100 transition-all cursor-default"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 opacity-60 hover:opacity-100 transition-all cursor-default"
                   >
                     <InstagramIcon width="16px" height="16px" />
                   </button>
@@ -70,7 +70,7 @@ export const FooterSection = () => {
                     disabled
                     title="Facebook – lien bientôt disponible"
                     aria-label="Facebook"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-blue-400/50 opacity-60 hover:opacity-100 transition-all cursor-default"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 opacity-60 hover:opacity-100 transition-all cursor-default"
                   >
                     <FacebookIcon width="16px" height="16px" />
                   </button>
@@ -90,7 +90,7 @@ export const FooterSection = () => {
                 href="https://stillinov.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
+                className="text-white/60 hover:text-white/80 transition-colors"
               >
                 Still-inov Agency
               </a>
