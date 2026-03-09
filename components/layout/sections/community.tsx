@@ -39,7 +39,7 @@ export const CommunitySection = () => {
               >
                 Vivre Votre Meilleure Carrière.
                 <br />
-                <span className="text-white">
+                <span className="text-primary">
                   Sans Stress Administratif.
                 </span>
               </h2>

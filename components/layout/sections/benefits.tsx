@@ -40,7 +40,7 @@ export const BenefitsSection = () => {
               <h2 className="font-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground text-balance-pretty">
                 Eddy Saint-Cyr
                 <br />
-                <span className="text-white">
+                <span className="text-primary">
                   Architecte de Vos Victoires
                 </span>
               </h2>

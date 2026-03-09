@@ -67,7 +67,7 @@ export const TeamSection = () => {
           >
             Une Culture
             <br />
-            <span className="text-white">
+            <span className="text-primary">
               D&apos;Excellence &amp; Transmission
             </span>
           </h2>
