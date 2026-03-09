@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [videoReady, setVideoReady] = useState(false);
+  const [videoReady, setVideoReady] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
