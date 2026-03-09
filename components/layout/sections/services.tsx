@@ -34,7 +34,7 @@ export const ServicesSection = () => {
           >
             Accompagnement 360°
             <br />
-            <span className="text-white">
+            <span className="text-primary">
               Sur et Hors du Terrain
             </span>
           </h2>

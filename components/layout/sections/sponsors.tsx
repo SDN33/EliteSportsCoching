@@ -22,7 +22,7 @@ export const SponsorsSection = () => {
             >
               Sport Synergie Consulting
               <br />
-              <span className="text-white">
+              <span className="text-primary">
                 Votre Partenaire Multisport
               </span>
             </h2>
@@ -57,7 +57,7 @@ export const SponsorsSection = () => {
             </div>
 
             {/* Bottom accent bar */}
-            <div className="h-1 bg-gradient-to-r from-white/20 via-white/40 to-white/20" />
+            <div className="h-1 bg-gradient-to-r from-primary/20 via-primary/50 to-primary/20" />
           </article>
         </div>
       </div>

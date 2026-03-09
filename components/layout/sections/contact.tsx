@@ -76,7 +76,7 @@ export const ContactSection = () => {
                 <h2 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground text-balance-pretty">
                   Transformer Vos Ambitions
                   <br />
-                  <span className="text-white">
+                  <span className="text-primary">
                     En Plan de Carrière
                   </span>
                 </h2>

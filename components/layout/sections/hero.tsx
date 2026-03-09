@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Trophy } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -74,7 +74,7 @@ export const HeroSection = () => {
           {/* Premium Badge */}
           <Badge
             variant="outline"
-            className="mx-auto inline-flex items-center gap-2 border-white/20 bg-white/10 backdrop-blur-lg px-3 sm:px-5 py-2 text-xs uppercase tracking-wider sm:tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
+            className="mx-auto inline-flex items-center gap-2 border-primary/30 bg-primary/10 backdrop-blur-lg px-3 sm:px-5 py-2 text-xs uppercase tracking-wider sm:tracking-widest text-white/90 hover:bg-primary/15 transition-all duration-300"
           >
             Conseiller Sportif Multi-Sports
           </Badge>
@@ -88,21 +88,25 @@ export const HeroSection = () => {
             >
               Transformer votre carrière
               <br />
-              <span className="text-white">
+              <span className="text-primary">
                 en stratégie gagnante
               </span>
             </h1>
 
-            <p
+            <div
               data-reveal="true"
               data-reveal-delay="2"
-              className="text-base sm:text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto"
+              className="overflow-hidden max-w-2xl mx-auto space-y-1 sm:space-y-2"
             >
-              Gestion de carrière, conseil sportif, logement, investissement & conciergerie.{" "}
-              <span className="text-white/90 font-semibold">
-                L&apos;accompagnement 360° qui accélère votre succès.
-              </span>
-            </p>
+              <p className="whitespace-nowrap text-[clamp(9px,2.5vw,1rem)] text-white/75 font-light tracking-tight">
+                Gestion de carrière, conseil sportif, logement, investissement{" "}
+                <span className="text-primary">&amp;</span> conciergerie
+              </p>
+              <p className="text-sm sm:text-base md:text-lg text-white/90 font-semibold">
+                L&apos;accompagnement{" "}
+                <span className="text-primary">360°</span> qui accélère votre succès.
+              </p>
+            </div>
           </div>
 
           {/* Features Pills */}
