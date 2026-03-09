@@ -3,10 +3,10 @@ import { Star, Check } from "lucide-react";
 const markers = [
   "Accompagnement logement et installation",
   "Conseil en investissement et gestion patrimoniale",
-  "Service de conciergerie et chauffeur privé",
+  "Service de conciergerie premium",
   "Médiation en cas de rupture avec un agent",
   "Soutien dans la vie personnelle et familiale",
-  "Préparation mentale et accompagnement psychologique",
+  "Préparation de gestion de vie privé",
 ];
 
 export const CommunitySection = () => {
@@ -17,18 +17,18 @@ export const CommunitySection = () => {
           data-reveal
           className="relative overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-br from-gradient-start via-gradient-middle to-gradient-end backdrop-blur-xl p-5 sm:p-8 md:p-16 shadow-2xl"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.05) 50%, rgba(29, 78, 216, 0.1) 100%)`
+            backgroundImage: `linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0.04) 100%)`
           }}
         >
           {/* Decorative elements */}
-          <div className="pointer-events-none absolute -left-24 top-0 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-24 right-0 h-48 w-48 rounded-full bg-amber-500/15 blur-3xl" />
-          <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 h-96 w-96 rounded-full bg-gradient-to-r from-blue-500/10 to-amber-500/10 blur-3xl" />
+          <div className="pointer-events-none absolute -left-24 top-0 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 right-0 h-48 w-48 rounded-full bg-white/5 blur-3xl" />
+          <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
 
           <div className="relative space-y-12">
             {/* Header */}
             <div className="space-y-6 max-w-4xl">
-              <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-300">
+              <p data-reveal className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-white/60">
                 <Star className="size-4 flex-shrink-0" />
                 <span>Votre Écosystème de Réussite</span>
               </p>
@@ -39,7 +39,7 @@ export const CommunitySection = () => {
               >
                 Vivre Votre Meilleure Carrière.
                 <br />
-                <span className="bg-gradient-to-r from-blue-300 to-orange-300 bg-clip-text text-transparent">
+                <span className="text-white">
                   Sans Stress Administratif.
                 </span>
               </h2>
@@ -59,12 +59,12 @@ export const CommunitySection = () => {
                   key={item}
                   data-reveal
                   data-reveal-delay={((index % 4) + 1).toString()}
-                  className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-4 sm:p-6 transition-all duration-500 hover:border-blue-400/50 hover:bg-white/10 hover:-translate-y-1"
+                  className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-sm p-4 sm:p-6 transition-all duration-500 hover:border-white/30 hover:bg-white/10 hover:-translate-y-1"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-500 -z-10" />
+                  <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500 -z-10" />
 
                   <p className="text-sm font-medium leading-relaxed text-white/90 group-hover:text-white transition-colors flex items-start gap-3">
-                    <Check className="size-5 text-blue-400 flex-shrink-0 mt-0.5 group-hover:scale-125 transition-transform" />
+                    <Check className="size-5 text-white/60 flex-shrink-0 mt-0.5 group-hover:scale-125 transition-transform" />
                     <span>{item}</span>
                   </p>
                 </div>

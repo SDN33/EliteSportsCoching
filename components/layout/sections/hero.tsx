@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [videoReady, setVideoReady] = useState(false);
+  const [videoReady, setVideoReady] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -74,7 +74,7 @@ export const HeroSection = () => {
           {/* Premium Badge */}
           <Badge
             variant="outline"
-            className="mx-auto inline-flex items-center gap-2 border-orange-500/40 bg-white/10 backdrop-blur-lg px-3 sm:px-5 py-2 text-xs uppercase tracking-wider sm:tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
+            className="mx-auto inline-flex items-center gap-2 border-white/20 bg-white/10 backdrop-blur-lg px-3 sm:px-5 py-2 text-xs uppercase tracking-wider sm:tracking-widest text-white/90 hover:bg-white/15 transition-all duration-300"
           >
             Conseiller Sportif Multi-Sports
           </Badge>
@@ -84,11 +84,11 @@ export const HeroSection = () => {
             <h1
               data-reveal="true"
               data-reveal-delay="1"
-              className="font-title text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white drop-shadow-2xl text-balance-pretty"
+              className="font-title text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold leading-tight text-white drop-shadow-2xl"
             >
               Transformer votre carrière
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="text-white">
                 en stratégie gagnante
               </span>
             </h1>
@@ -99,7 +99,7 @@ export const HeroSection = () => {
               className="text-base sm:text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-2xl mx-auto"
             >
               Gestion de carrière, conseil sportif, logement, investissement & conciergerie.{" "}
-              <span className="text-orange-400 font-semibold">
+              <span className="text-white/90 font-semibold">
                 L&apos;accompagnement 360° qui accélère votre succès.
               </span>
             </p>
@@ -130,7 +130,7 @@ export const HeroSection = () => {
             <Button
               asChild
               size="lg"
-              className="rounded-full px-6 sm:px-8 h-auto py-3 sm:py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group"
+              className="rounded-full px-6 sm:px-8 h-auto py-3 sm:py-3.5 bg-white hover:bg-white/90 text-black font-bold shadow-xl hover:shadow-2xl transition-all duration-300 group"
             >
               <Link href="#contact" className="flex items-center justify-center gap-2 text-sm sm:text-base">
                 Commencer mon accompagnement

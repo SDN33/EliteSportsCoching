@@ -60,8 +60,8 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="relative py-14 sm:py-20 md:py-32 overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-blue-500/15 to-transparent rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-amber-500/15 to-transparent rounded-full blur-3xl -z-10" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-white/5 to-transparent rounded-full blur-3xl -z-10" />
 
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_1.2fr] lg:gap-16">
@@ -69,14 +69,14 @@ export const ContactSection = () => {
           <div data-reveal="left" className="flex flex-col gap-10 items-center lg:items-start">
             <div className="space-y-6 w-full">
               <div className="space-y-3 text-center lg:text-left">
-                <p className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-orange-400">
+                <p className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-white/60">
                   <ArrowRight className="size-4 flex-shrink-0" />
                   <span>Parlons de Votre Stratégie</span>
                 </p>
                 <h2 className="font-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground text-balance-pretty">
                   Transformer Vos Ambitions
                   <br />
-                  <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                  <span className="text-white">
                     En Plan de Carrière
                   </span>
                 </h2>
@@ -89,10 +89,10 @@ export const ContactSection = () => {
 
             {/* Contact Cards */}
             <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
-              <article data-reveal data-reveal-delay="1" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
+              <article data-reveal data-reveal-delay="1" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
-                  <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
+                  <div className="rounded-lg bg-white/10 p-2 text-white/80">
                     <Mail className="size-5" />
                   </div>
                   <span className="font-bold text-white">E-mail Direct</span>
@@ -100,10 +100,10 @@ export const ContactSection = () => {
                 <p className="text-sm text-white/70 font-medium break-all">contact@elitesportscoching.com</p>
               </article>
 
-              <article data-reveal data-reveal-delay="2" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
+              <article data-reveal data-reveal-delay="2" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
-                  <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
+                  <div className="rounded-lg bg-white/10 p-2 text-white/80">
                     <Phone className="size-5" />
                   </div>
                   <span className="font-bold text-white">Appel Stratégique</span>
@@ -111,10 +111,10 @@ export const ContactSection = () => {
                 <p className="text-sm text-white/70 font-medium">+33 6 00 00 00 00</p>
               </article>
 
-              <article data-reveal data-reveal-delay="3" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
+              <article data-reveal data-reveal-delay="3" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
-                  <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
+                  <div className="rounded-lg bg-white/10 p-2 text-white/80">
                     <Building2 className="size-5" />
                   </div>
                   <span className="font-bold text-white">Profils</span>
@@ -122,10 +122,10 @@ export const ContactSection = () => {
                 <p className="text-sm text-white/70 font-medium">Athlètes, joueurs, sportifs de haut niveau</p>
               </article>
 
-              <article data-reveal data-reveal-delay="4" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-amber-500/0 group-hover:from-blue-500/10 group-hover:to-amber-500/10 transition-all duration-300 -z-10" />
+              <article data-reveal data-reveal-delay="4" className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-lg p-4 sm:p-6 hover:border-white/30 hover:bg-white/10 transition-all duration-300">
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-300 -z-10" />
                 <div className="mb-3 flex items-center gap-3">
-                  <div className="rounded-lg bg-blue-500/20 p-2 text-blue-400">
+                  <div className="rounded-lg bg-white/10 p-2 text-white/80">
                     <MapPin className="size-5" />
                   </div>
                   <span className="font-bold text-white">Couverture</span>
@@ -158,7 +158,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Input
                             placeholder="Votre nom"
-                            className="h-12 rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-blue-500/50 focus:bg-white/15"
+                            className="h-12 rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/30 focus:bg-white/15"
                             {...field}
                           />
                         </FormControl>
@@ -177,7 +177,7 @@ export const ContactSection = () => {
                           <Input
                             type="email"
                             placeholder="vous@exemple.com"
-                            className="h-12 rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-blue-500/50 focus:bg-white/15"
+                            className="h-12 rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/30 focus:bg-white/15"
                             {...field}
                           />
                         </FormControl>
@@ -219,7 +219,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Input
                             placeholder="Ex: gérer ma carrière et trouver un logement"
-                            className="h-12 rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-blue-500/50 focus:bg-white/15"
+                            className="h-12 rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/30 focus:bg-white/15"
                             {...field}
                           />
                         </FormControl>
@@ -238,7 +238,7 @@ export const ContactSection = () => {
                           <Textarea
                             rows={5}
                             placeholder="Parlez de vos enjeux, contraintes, ambitions et échéances."
-                            className="resize-none rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-blue-500/50 focus:bg-white/15"
+                            className="resize-none rounded-lg bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-white/30 focus:bg-white/15"
                             {...field}
                           />
                         </FormControl>
@@ -249,7 +249,7 @@ export const ContactSection = () => {
 
                   <Button
                     type="submit"
-                    className="rounded-lg h-12 mt-2 bg-orange-500 hover:bg-orange-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 w-full"
+                    className="rounded-lg h-12 mt-2 bg-white hover:bg-white/90 text-black font-bold shadow-lg hover:shadow-xl transition-all duration-300 w-full"
                   >
                     Envoyer ma demande
                   </Button>
