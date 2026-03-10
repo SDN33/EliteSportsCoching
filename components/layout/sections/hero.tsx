@@ -81,7 +81,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 -z-10 bg-radial-gradient opacity-40 dark:opacity-60" />
 
       {/* Content Container */}
-      <div className="container relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-0">
         <div
           data-reveal="true"
           className="space-y-5 sm:space-y-8 text-center max-w-3xl"
