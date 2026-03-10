@@ -1,16 +1,11 @@
 import { HeartHandshake, Lightbulb, ShieldCheck, Sparkles, Trophy, Zap } from "lucide-react";
 
 const values = [
-  "Dépassement de soi",
-  "Persévérance",
   "Méthodologie",
   "Stratégie",
-  "Discipline",
   "Bienveillance",
   "Transmission",
   "Engagement",
-  "Gestion de carrière",
-  "Excellence",
 ];
 
 const valuePillars = [
