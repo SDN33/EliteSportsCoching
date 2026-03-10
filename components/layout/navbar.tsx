@@ -22,7 +22,6 @@ const routeList: RouteProps[] = [
   { href: "#identite", label: "Positionnement" },
   { href: "#presentation", label: "Parcours" },
   { href: "#methodologie", label: "Méthodologie" },
-  { href: "#domaines", label: "Interventions" },
   { href: "#valeurs", label: "Valeurs" },
   { href: "#contact", label: "Contact" },
 ];
