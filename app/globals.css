@@ -240,12 +240,21 @@ img {
 }
 
 /* Hide native iOS Safari media controls overlay on background videos */
+.hero-bg-video {
+  pointer-events: none;
+}
+
 .hero-bg-video::-webkit-media-controls,
+.hero-bg-video::-webkit-media-controls-enclosure,
+.hero-bg-video::-webkit-media-controls-overlay-enclosure,
 .hero-bg-video::-webkit-media-controls-panel,
 .hero-bg-video::-webkit-media-controls-play-button,
 .hero-bg-video::-webkit-media-controls-start-playback-button,
 .hero-bg-video::-webkit-media-controls-overlay-play-button {
+  /* opacity + pointer-events kept intentionally: iOS Safari can ignore display:none on these pseudo-elements */
   display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
   -webkit-appearance: none;
   appearance: none;
 }

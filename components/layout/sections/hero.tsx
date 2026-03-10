@@ -51,18 +51,27 @@ export const HeroSection = () => {
       void tryPlay();
     };
 
+    // Resume playback when the tab becomes visible again (e.g. switching back on iOS)
+    const onVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        void tryPlay();
+      }
+    };
+
     // Explicitly load to trigger buffering on iOS (which may defer loading)
     video.load();
 
     video.addEventListener("canplay", onCanPlay);
     video.addEventListener("loadedmetadata", onLoadedMetadata);
     video.addEventListener("ended", onEnded);
+    document.addEventListener("visibilitychange", onVisibilityChange);
     void tryPlay();
 
     return () => {
       video.removeEventListener("canplay", onCanPlay);
       video.removeEventListener("loadedmetadata", onLoadedMetadata);
       video.removeEventListener("ended", onEnded);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
     };
   }, []);
 
@@ -78,6 +87,7 @@ export const HeroSection = () => {
         preload="auto"
         disablePictureInPicture
         disableRemotePlayback
+        controlsList="nodownload nofullscreen noremoteplayback"
         onCanPlay={() => setVideoReady(true)}
         onPlaying={() => setVideoReady(true)}
         className={`hero-bg-video absolute inset-0 w-full h-full object-cover -z-20 transition-opacity duration-1000 ${
