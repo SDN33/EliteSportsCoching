@@ -18,13 +18,18 @@ export const HeroSection = () => {
     video.defaultMuted = true;
     video.playsInline = true;
     video.preload = "auto";
+    // Required for autoplay on older iOS Safari versions
+    video.setAttribute("webkit-playsinline", "");
+    video.setAttribute("playsinline", "");
 
     const tryPlay = async () => {
+      if (!video.paused) return; // already playing, avoid duplicate attempts
       try {
         await video.play();
         setVideoReady(true);
       } catch {
-        setVideoReady(false);
+        // Keep poster visible on autoplay failure (e.g. iOS power-save mode)
+        setVideoReady(true);
       }
     };
 
@@ -33,11 +38,21 @@ export const HeroSection = () => {
       void tryPlay();
     };
 
+    // loadedmetadata fires earlier than canplay and helps on iOS
+    const onLoadedMetadata = () => {
+      void tryPlay();
+    };
+
+    // Explicitly load to trigger buffering on iOS (which may defer loading)
+    video.load();
+
     video.addEventListener("canplay", onCanPlay);
+    video.addEventListener("loadedmetadata", onLoadedMetadata);
     void tryPlay();
 
     return () => {
       video.removeEventListener("canplay", onCanPlay);
+      video.removeEventListener("loadedmetadata", onLoadedMetadata);
     };
   }, []);
 
