@@ -238,3 +238,14 @@ img {
   );
   background-size: 1000px 100%;
 }
+
+/* Hide native iOS Safari media controls overlay on background videos */
+.hero-bg-video::-webkit-media-controls,
+.hero-bg-video::-webkit-media-controls-panel,
+.hero-bg-video::-webkit-media-controls-play-button,
+.hero-bg-video::-webkit-media-controls-start-playback-button,
+.hero-bg-video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+}

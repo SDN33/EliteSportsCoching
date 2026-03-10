@@ -21,6 +21,8 @@ export const HeroSection = () => {
     // Required for autoplay on older iOS Safari versions
     video.setAttribute("webkit-playsinline", "");
     video.setAttribute("playsinline", "");
+    // Deny AirPlay / suppress native iOS media controls overlay
+    video.setAttribute("x-webkit-airplay", "deny");
 
     const tryPlay = async () => {
       if (!video.paused) return; // already playing, avoid duplicate attempts
@@ -43,16 +45,24 @@ export const HeroSection = () => {
       void tryPlay();
     };
 
+    // Re-play manually on end to reliably loop on iOS Safari (loop attribute is unreliable)
+    const onEnded = () => {
+      video.currentTime = 0;
+      void tryPlay();
+    };
+
     // Explicitly load to trigger buffering on iOS (which may defer loading)
     video.load();
 
     video.addEventListener("canplay", onCanPlay);
     video.addEventListener("loadedmetadata", onLoadedMetadata);
+    video.addEventListener("ended", onEnded);
     void tryPlay();
 
     return () => {
       video.removeEventListener("canplay", onCanPlay);
       video.removeEventListener("loadedmetadata", onLoadedMetadata);
+      video.removeEventListener("ended", onEnded);
     };
   }, []);
 
@@ -66,9 +76,11 @@ export const HeroSection = () => {
         muted
         playsInline
         preload="auto"
+        disablePictureInPicture
+        disableRemotePlayback
         onCanPlay={() => setVideoReady(true)}
         onPlaying={() => setVideoReady(true)}
-        className={`absolute inset-0 w-full h-full object-cover -z-20 transition-opacity duration-1000 ${
+        className={`hero-bg-video absolute inset-0 w-full h-full object-cover -z-20 transition-opacity duration-1000 ${
           videoReady ? "opacity-100" : "opacity-0"
         }`}
         poster="/hero-image-dark.jpeg"
