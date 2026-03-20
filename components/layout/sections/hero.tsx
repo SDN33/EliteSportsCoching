@@ -23,6 +23,10 @@ export const HeroSection = () => {
     video.setAttribute("playsinline", "");
     // Deny AirPlay / suppress native iOS media controls overlay
     video.setAttribute("x-webkit-airplay", "deny");
+    // WeChat / Tencent browser on Android: force inline H5 player, no fullscreen
+    video.setAttribute("x5-video-player-type", "h5");
+    video.setAttribute("x5-playsinline", "true");
+    video.setAttribute("x5-video-player-fullscreen", "false");
 
     const tryPlay = async () => {
       if (!video.paused) return; // already playing, avoid duplicate attempts
@@ -51,11 +55,30 @@ export const HeroSection = () => {
       void tryPlay();
     };
 
+    // Resume if browser auto-pauses the video (e.g. notification interruption, audio focus loss)
+    // Guard with video.ended so the ended handler stays in charge of looping
+    const onPause = () => {
+      if (video.ended) return;
+      if (document.visibilityState === "visible") {
+        void tryPlay();
+      }
+    };
+
     // Resume playback when the tab becomes visible again (e.g. switching back on iOS)
     const onVisibilityChange = () => {
       if (document.visibilityState === "visible") {
         void tryPlay();
       }
+    };
+
+    // Fallback: on the very first user interaction, retry play.
+    // Required for iOS Low Power Mode and strict Android autoplay policies.
+    // Both listeners are removed inside the handler so only one tryPlay() call
+    // is triggered per tap (which would otherwise fire both touchstart and click).
+    const onUserInteraction = () => {
+      document.removeEventListener("touchstart", onUserInteraction);
+      document.removeEventListener("click", onUserInteraction);
+      void tryPlay();
     };
 
     // Explicitly load to trigger buffering on iOS (which may defer loading)
@@ -64,14 +87,20 @@ export const HeroSection = () => {
     video.addEventListener("canplay", onCanPlay);
     video.addEventListener("loadedmetadata", onLoadedMetadata);
     video.addEventListener("ended", onEnded);
+    video.addEventListener("pause", onPause);
     document.addEventListener("visibilitychange", onVisibilityChange);
+    document.addEventListener("touchstart", onUserInteraction, { passive: true });
+    document.addEventListener("click", onUserInteraction);
     void tryPlay();
 
     return () => {
       video.removeEventListener("canplay", onCanPlay);
       video.removeEventListener("loadedmetadata", onLoadedMetadata);
       video.removeEventListener("ended", onEnded);
+      video.removeEventListener("pause", onPause);
       document.removeEventListener("visibilitychange", onVisibilityChange);
+      document.removeEventListener("touchstart", onUserInteraction);
+      document.removeEventListener("click", onUserInteraction);
     };
   }, []);
 
